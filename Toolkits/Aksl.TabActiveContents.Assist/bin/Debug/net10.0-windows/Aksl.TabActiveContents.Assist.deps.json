@@ -1,0 +1,38 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Aksl.TabActiveContents.Assist/1.0.0": {
+        "dependencies": {
+          "Prism.Core": "1.0.0"
+        },
+        "runtime": {
+          "Aksl.TabActiveContents.Assist.dll": {}
+        }
+      },
+      "Prism.Core/1.0.0": {
+        "runtime": {
+          "Prism.dll": {
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Aksl.TabActiveContents.Assist/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Prism.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

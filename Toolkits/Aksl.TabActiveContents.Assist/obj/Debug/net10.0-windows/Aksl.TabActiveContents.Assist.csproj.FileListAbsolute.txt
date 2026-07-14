@@ -1,0 +1,15 @@
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\bin\Debug\net10.0-windows\Aksl.TabActiveContents.Assist.deps.json
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\bin\Debug\net10.0-windows\Aksl.TabActiveContents.Assist.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\bin\Debug\net10.0-windows\Aksl.TabActiveContents.Assist.pdb
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\bin\Debug\net10.0-windows\Prism.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\bin\Debug\net10.0-windows\Prism.pdb
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\obj\Debug\net10.0-windows\Aksl.TabActiveContents.Assist.csproj.AssemblyReference.cache
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\obj\Debug\net10.0-windows\Aksl.TabActiveContents.Assist.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\obj\Debug\net10.0-windows\Aksl.TabActiveContents.Assist.AssemblyInfoInputs.cache
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\obj\Debug\net10.0-windows\Aksl.TabActiveContents.Assist.AssemblyInfo.cs
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\obj\Debug\net10.0-windows\Aksl.TabActiveContents.Assist.csproj.CoreCompileInputs.cache
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\obj\Debug\net10.0-windows\Aksl.Tab.6F218CB9.Up2Date
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\obj\Debug\net10.0-windows\Aksl.TabActiveContents.Assist.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\obj\Debug\net10.0-windows\refint\Aksl.TabActiveContents.Assist.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\obj\Debug\net10.0-windows\Aksl.TabActiveContents.Assist.pdb
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabActiveContents.Assist\obj\Debug\net10.0-windows\ref\Aksl.TabActiveContents.Assist.dll

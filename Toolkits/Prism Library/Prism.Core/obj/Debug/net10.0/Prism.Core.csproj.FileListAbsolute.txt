@@ -1,0 +1,14 @@
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\bin\Debug\net10.0\Prism.deps.json
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\bin\Debug\net10.0\Prism.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\bin\Debug\net10.0\Prism.pdb
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\obj\Debug\net10.0\Prism.Properties.Resources.resources
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\obj\Debug\net10.0\Prism.Core.csproj.GenerateResource.cache
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\obj\Debug\net10.0\Prism.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\obj\Debug\net10.0\Prism.Core.AssemblyInfoInputs.cache
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\obj\Debug\net10.0\Prism.Core.AssemblyInfo.cs
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\obj\Debug\net10.0\Prism.Core.csproj.CoreCompileInputs.cache
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\obj\Debug\net10.0\Prism.Core.sourcelink.json
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\obj\Debug\net10.0\Prism.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\obj\Debug\net10.0\refint\Prism.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\obj\Debug\net10.0\Prism.pdb
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\obj\Debug\net10.0\ref\Prism.dll

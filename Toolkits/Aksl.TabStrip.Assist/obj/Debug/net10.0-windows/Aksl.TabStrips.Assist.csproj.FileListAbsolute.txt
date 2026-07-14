@@ -1,0 +1,16 @@
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\bin\Debug\net10.0-windows\Aksl.TabStrips.Assist.deps.json
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\bin\Debug\net10.0-windows\Aksl.TabStrips.Assist.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\bin\Debug\net10.0-windows\Aksl.TabStrips.Assist.pdb
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\bin\Debug\net10.0-windows\Prism.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\bin\Debug\net10.0-windows\Prism.pdb
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\obj\Debug\net10.0-windows\Aksl.TabStrips.Assist.csproj.AssemblyReference.cache
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\obj\Debug\net10.0-windows\Aksl.TabStrips.Assist.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\obj\Debug\net10.0-windows\Aksl.TabStrips.Assist.AssemblyInfoInputs.cache
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\obj\Debug\net10.0-windows\Aksl.TabStrips.Assist.AssemblyInfo.cs
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\obj\Debug\net10.0-windows\Aksl.TabStrips.Assist.csproj.CoreCompileInputs.cache
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\obj\Debug\net10.0-windows\Aksl.TabStrips.Assist.sourcelink.json
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\obj\Debug\net10.0-windows\Aksl.Tab.40CFC8C1.Up2Date
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\obj\Debug\net10.0-windows\Aksl.TabStrips.Assist.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\obj\Debug\net10.0-windows\refint\Aksl.TabStrips.Assist.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\obj\Debug\net10.0-windows\Aksl.TabStrips.Assist.pdb
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.TabStrips.Assist\obj\Debug\net10.0-windows\ref\Aksl.TabStrips.Assist.dll

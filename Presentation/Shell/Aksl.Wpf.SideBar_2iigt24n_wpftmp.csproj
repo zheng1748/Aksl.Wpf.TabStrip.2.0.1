@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <AssemblyName>Aksl.Wpf.SideBar</AssemblyName>
+    <IntermediateOutputPath>obj\Debug\</IntermediateOutputPath>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Shell\obj\</MSBuildProjectExtensionsPath>
+    <_TargetAssemblyProjectName>Aksl.Wpf.SideBar</_TargetAssemblyProjectName>
+    <RootNamespace>Aksl.Modules.Shell</RootNamespace>
+  </PropertyGroup>
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows8.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>Aksl.Modules.Shell</RootNamespace>
+    <Authors>zheng ming</Authors>
+    <Company>Aksl</Company>
+    <ApplicationIcon>Assets\cookcsharp.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Configuration\appsettings.json" />
+    <None Remove="Data\AirCompressers.xml" />
+    <None Remove="Data\AllMenus.xml" />
+    <None Remove="Data\CoolingTowers.xml" />
+    <None Remove="Data\Industry.xml" />
+    <None Remove="Data\Others.xml" />
+    <None Remove="Data\Pipelines.xml" />
+    <None Remove="Data\Thermometers.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Configuration\appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CommonServiceLocator" Version="2.0.7" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.10" />
+    <PackageReference Include="LiveChartsCore.SkiaSharpView.WPF" Version="2.0.0-rc5.4" />
+    <PackageReference Include="Unity" Version="5.11.10" />
+    <PackageReference Include="Unity.Container" Version="5.11.11" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.77" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    <PackageReference Include="System.Buffers" Version="4.5.1" />
+    <PackageReference Include="System.Memory" Version="4.5.5" />
+    <PackageReference Include="System.IO.Pipelines" Version="8.0.0" />
+    <PackageReference Include="System.Threading.Channels" Version="8.0.0" />
+    <PackageReference Include="System.Threading.Tasks.Dataflow" Version="8.0.0" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\Aksl.Infrastructure\Aksl.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Toolkits\Aksl.Toolkit.Controls\Aksl.Toolkit.Controls.csproj" />
+    <ProjectReference Include="..\..\Toolkits\Aksl.Toolkit\Aksl.Toolkit.csproj" />
+    <ProjectReference Include="..\..\Toolkits\Prism Library\Prism.Core\Prism.Core.csproj" />
+    <ProjectReference Include="..\..\Toolkits\Prism Library\Prism.Unity.Wpf\Prism.Unity.Wpf.csproj" />
+    <ProjectReference Include="..\..\Toolkits\Prism Library\Prism.Wpf\Prism.Wpf.csproj" />
+    <ProjectReference Include="..\Modules\Account\Account.csproj" />
+    <ProjectReference Include="..\Modules\Home\Home.csproj" />
+    <ProjectReference Include="..\Modules\Industry\AirCompresserView\AirCompresserView.csproj" />
+    <ProjectReference Include="..\Modules\Industry\CoolingTowerView\CoolingTowerView.csproj" />
+    <ProjectReference Include="..\Modules\Industry\PipelineView\PipelineView.csproj" />
+    <ProjectReference Include="..\Modules\Industry\ThermometerrView\ThermometerView.csproj" />
+    <ProjectReference Include="..\Modules\Navigations\ExpandHamburgerMenuNavigationBar\ExpandHamburgerMenuNavigationBar.csproj" />
+    <ProjectReference Include="..\Modules\Navigations\ExpandHamburgerMenuSub\ExpandHamburgerMenuSub.csproj" />
+    <ProjectReference Include="..\Modules\Navigations\ExpandHamburgerMenuTab\ExpandHamburgerMenuTab.csproj" />
+    <ProjectReference Include="..\Modules\Navigations\ExpandHamburgerMenuTreeBar\ExpandHamburgerMenuTreeBar.csproj" />
+    <ProjectReference Include="..\Modules\Navigations\ExpandHamburgerMenu\ExpandHamburgerMenu.csproj" />
+    <ProjectReference Include="..\Modules\Navigations\MenuSub\MenuSub.csproj" />
+    <ProjectReference Include="..\Modules\Navigations\TabBar\TabBar.csproj" />
+    <ProjectReference Include="..\Modules\Others\OthersView\OthersView.csproj" />
+    <ProjectReference Include="..\Modules\SideBars\HamburgerMenuNavigationSideBar\HamburgerMenuNavigationSideBar.csproj" />
+    <ProjectReference Include="..\Modules\SideBars\HamburgerMenuPopupSideBar\HamburgerMenuPopupSideBar.csproj" />
+    <ProjectReference Include="..\Modules\SideBars\HamburgerMenuSideBar\HamburgerMenuSideBar.csproj" />
+    <ProjectReference Include="..\Modules\SideBars\HamburgerMenuTreeSideBar\HamburgerMenuTreeSideBar.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\Accessibility.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Infrastructure\Aksl.Infrastructure\bin\Debug\net8.0-windows8.0\Aksl.Infrastructure.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Account\bin\Debug\net8.0-windows8.0\Aksl.Modules.Account.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Industry\AirCompresserView\bin\Debug\net8.0-windows8.0\Aksl.Modules.AirCompresser.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Industry\CoolingTowerView\bin\Debug\net8.0-windows8.0\Aksl.Modules.CoolingTower.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Navigations\ExpandHamburgerMenu\bin\Debug\net8.0-windows8.0\Aksl.Modules.ExpandHamburgerMenu.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Navigations\ExpandHamburgerMenuNavigationBar\bin\Debug\net8.0-windows8.0\Aksl.Modules.ExpandHamburgerMenuNavigationBar.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Navigations\ExpandHamburgerMenuSub\bin\Debug\net8.0-windows8.0\Aksl.Modules.ExpandHamburgerMenuSub.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Navigations\ExpandHamburgerMenuTab\bin\Debug\net8.0-windows8.0\Aksl.Modules.ExpandHamburgerMenuTab.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Navigations\ExpandHamburgerMenuTreeBar\bin\Debug\net8.0-windows8.0\Aksl.Modules.ExpandHamburgerMenuTreeBar.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\SideBars\HamburgerMenuNavigationSideBar\bin\Debug\net8.0-windows8.0\Aksl.Modules.HamburgerMenuNavigationSideBar.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\SideBars\HamburgerMenuPopupSideBar\bin\Debug\net8.0-windows8.0\Aksl.Modules.HamburgerMenuPopupSideBar.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\SideBars\HamburgerMenuSideBar\bin\Debug\net8.0-windows8.0\Aksl.Modules.HamburgerMenuSideBar.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\SideBars\HamburgerMenuTreeSideBar\bin\Debug\net8.0-windows8.0\Aksl.Modules.HamburgerMenuTreeSideBar.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Home\bin\Debug\net8.0-windows8.0\Aksl.Modules.Home.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Navigations\MenuSub\bin\Debug\net8.0-windows8.0\Aksl.Modules.MenuSub.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Others\OthersView\bin\Debug\net8.0-windows8.0\Aksl.Modules.Others.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Industry\PipelineView\bin\Debug\net8.0-windows8.0\Aksl.Modules.Pipeline.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Navigations\TabBar\bin\Debug\net8.0-windows8.0\Aksl.Modules.TabBar.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Presentation\Modules\Industry\ThermometerrView\bin\Debug\net8.0-windows8.0\Aksl.Modules.Thermometer.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Aksl.Toolkit.Controls\bin\Debug\net8.0-windows\Aksl.Toolkit.Controls.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Aksl.Toolkit\bin\Debug\net8.0-windows\Aksl.Toolkit.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\automapper\12.0.1\lib\netstandard2.1\AutoMapper.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\commonservicelocator\2.0.7\lib\net7.0\CommonServiceLocator.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\opentk.glwpfcontrol\3.3.0\lib\net452\GLWpfControl.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\harfbuzzsharp\8.3.0.1\lib\net8.0\HarfBuzzSharp.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\livechartscore\2.0.0-rc5.4\lib\net8.0-windows7.0\LiveChartsCore.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\livechartscore.skiasharpview\2.0.0-rc5.4\lib\net8.0-windows7.0\LiveChartsCore.SkiaSharpView.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\livechartscore.skiasharpview.wpf\2.0.0-rc5.4\lib\net8.0-windows7.0\LiveChartsCore.SkiaSharpView.WPF.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\Microsoft.CSharp.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.configuration.abstractions\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.configuration.binder\8.0.1\lib\net8.0\Microsoft.Extensions.Configuration.Binder.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.configuration.fileextensions\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.configuration.json\8.0.0\lib\net8.0\Microsoft.Extensions.Configuration.Json.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\8.0.0\lib\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.dependencyinjection\8.0.0\lib\net8.0\Microsoft.Extensions.DependencyInjection.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.fileproviders.abstractions\8.0.0\lib\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.fileproviders.physical\8.0.0\lib\net8.0\Microsoft.Extensions.FileProviders.Physical.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.filesystemglobbing\8.0.0\lib\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.logging.abstractions\8.0.0\lib\net8.0\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.logging.configuration\8.0.0\lib\net8.0\Microsoft.Extensions.Logging.Configuration.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.logging.console\8.0.0\lib\net8.0\Microsoft.Extensions.Logging.Console.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.logging.debug\8.0.0\lib\net8.0\Microsoft.Extensions.Logging.Debug.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.logging\8.0.0\lib\net8.0\Microsoft.Extensions.Logging.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.options.configurationextensions\8.0.0\lib\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.options\8.0.2\lib\net8.0\Microsoft.Extensions.Options.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.extensions.primitives\8.0.0\lib\net8.0\Microsoft.Extensions.Primitives.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\Microsoft.VisualBasic.Core.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\Microsoft.VisualBasic.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\Microsoft.Win32.Primitives.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\Microsoft.Win32.Registry.AccessControl.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\Microsoft.Win32.Registry.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.win32.systemevents\9.0.10\lib\net8.0\Microsoft.Win32.SystemEvents.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\microsoft.xaml.behaviors.wpf\1.1.77\lib\net6.0-windows7.0\Microsoft.Xaml.Behaviors.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\mscorlib.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\netstandard.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\opentk\3.3.1\lib\net20\OpenTK.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\PresentationCore.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\PresentationFramework.Aero.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\PresentationFramework.Aero2.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\PresentationFramework.AeroLite.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\PresentationFramework.Classic.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\PresentationFramework.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\PresentationFramework.Luna.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\PresentationFramework.Royale.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\PresentationUI.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Core\bin\Debug\net8.0\Prism.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Unity.Wpf\bin\Debug\net8.0-windows\Prism.Unity.Wpf.dll" />
+    <ReferencePath Include="C:\Users\zheng\Documents\GitHub\Aksl.Wpf.SideBar.2.0.0\Toolkits\Prism Library\Prism.Wpf\bin\Debug\net8.0-windows\Prism.Wpf.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\ReachFramework.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\skiasharp\3.116.1\ref\net8.0\SkiaSharp.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\skiasharp.harfbuzz\3.116.1\lib\net8.0\SkiaSharp.HarfBuzz.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\skiasharp.views.desktop.common\3.116.1\lib\net8.0\SkiaSharp.Views.Desktop.Common.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\skiasharp.views.wpf\3.116.1\lib\net462\SkiaSharp.Views.WPF.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.AppContext.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Buffers.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\System.CodeDom.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Collections.Concurrent.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Collections.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Collections.Immutable.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Collections.NonGeneric.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Collections.Specialized.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.ComponentModel.Annotations.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.ComponentModel.DataAnnotations.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.ComponentModel.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.ComponentModel.EventBasedAsync.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.ComponentModel.Primitives.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.ComponentModel.TypeConverter.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\System.Configuration.ConfigurationManager.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Configuration.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Console.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Core.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Data.Common.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Data.DataSetExtensions.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Data.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Diagnostics.Contracts.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Diagnostics.Debug.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Diagnostics.DiagnosticSource.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\System.Diagnostics.EventLog.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Diagnostics.FileVersionInfo.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\System.Diagnostics.PerformanceCounter.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Diagnostics.Process.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Diagnostics.StackTrace.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Diagnostics.TextWriterTraceListener.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Diagnostics.Tools.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Diagnostics.TraceSource.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Diagnostics.Tracing.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\System.DirectoryServices.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\system.drawing.common\9.0.10\lib\net8.0\System.Drawing.Common.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Drawing.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Drawing.Primitives.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Dynamic.Runtime.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Formats.Asn1.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Formats.Tar.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Globalization.Calendars.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Globalization.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Globalization.Extensions.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.Compression.Brotli.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.Compression.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.Compression.FileSystem.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.Compression.ZipFile.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.FileSystem.AccessControl.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.FileSystem.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.FileSystem.DriveInfo.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.FileSystem.Primitives.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.FileSystem.Watcher.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.IsolatedStorage.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.MemoryMappedFiles.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\System.IO.Packaging.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\system.io.pipelines\8.0.0\lib\net8.0\System.IO.Pipelines.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.Pipes.AccessControl.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.Pipes.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.IO.UnmanagedMemoryStream.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Linq.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Linq.Expressions.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Linq.Parallel.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Linq.Queryable.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Memory.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.Http.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.Http.Json.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.HttpListener.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.Mail.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.NameResolution.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.NetworkInformation.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.Ping.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.Primitives.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.Quic.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.Requests.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.Security.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.ServicePoint.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.Sockets.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.WebClient.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.WebHeaderCollection.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.WebProxy.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.WebSockets.Client.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Net.WebSockets.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Numerics.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Numerics.Vectors.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.ObjectModel.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\System.Printing.dll" />
+    <ReferencePath Include="C:\Users\zheng\.nuget\packages\system.drawing.common\9.0.10\lib\net8.0\System.Private.Windows.Core.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Reflection.DispatchProxy.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Reflection.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Reflection.Emit.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Reflection.Emit.ILGeneration.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Reflection.Emit.Lightweight.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Reflection.Extensions.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Reflection.Metadata.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Reflection.Primitives.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Reflection.TypeExtensions.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\8.0.26\ref\net8.0\System.Resources.Extensions.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Resources.Reader.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Resources.ResourceManager.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Resources.Writer.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Runtime.CompilerServices.Unsafe.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Runtime.CompilerServices.VisualC.dll" />
+    <ReferencePath Include="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.26\ref\net8.0\System.Runtime.dll" />
+    <ReferencePath 

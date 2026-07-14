@@ -1,0 +1,15 @@
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\bin\Debug\net10.0-windows\Aksl.Tabs.Assist.deps.json
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\bin\Debug\net10.0-windows\Aksl.Tabs.Assist.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\bin\Debug\net10.0-windows\Aksl.Tabs.Assist.pdb
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\bin\Debug\net10.0-windows\Prism.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\bin\Debug\net10.0-windows\Prism.pdb
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\obj\Debug\net10.0-windows\Aksl.Tabs.Assist.csproj.AssemblyReference.cache
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\obj\Debug\net10.0-windows\Aksl.Tabs.Assist.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\obj\Debug\net10.0-windows\Aksl.Tabs.Assist.AssemblyInfoInputs.cache
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\obj\Debug\net10.0-windows\Aksl.Tabs.Assist.AssemblyInfo.cs
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\obj\Debug\net10.0-windows\Aksl.Tabs.Assist.csproj.CoreCompileInputs.cache
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\obj\Debug\net10.0-windows\Aksl.Tab.8F4A4BC8.Up2Date
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\obj\Debug\net10.0-windows\Aksl.Tabs.Assist.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\obj\Debug\net10.0-windows\refint\Aksl.Tabs.Assist.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\obj\Debug\net10.0-windows\Aksl.Tabs.Assist.pdb
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.0\Toolkits\Aksl.Tabs.Assist\obj\Debug\net10.0-windows\ref\Aksl.Tabs.Assist.dll
