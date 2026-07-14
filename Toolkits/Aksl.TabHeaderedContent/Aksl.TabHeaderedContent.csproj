@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>Aksl.TabHeaderedContent</RootNamespace>
+		<Description>Use Wpf TabHeaderedContent.</Description>
+		<Authors>zheng ming 13529806</Authors>
+		<Company>Aksl</Company>
+		<Product>Wpf Tab HeaderedContent</Product>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Aksl.TabHeaderedContent.Assist\Aksl.TabHeaderedContent.Assist.csproj" />
+	  <ProjectReference Include="..\Prism Library\Prism.Core\Prism.Core.csproj" />
+	  <ProjectReference Include="..\Prism Library\Prism.Unity.Wpf\Prism.Unity.Wpf.csproj" />
+	  <ProjectReference Include="..\Prism Library\Prism.Wpf\Prism.Wpf.csproj" />
+	</ItemGroup>
+
+</Project>

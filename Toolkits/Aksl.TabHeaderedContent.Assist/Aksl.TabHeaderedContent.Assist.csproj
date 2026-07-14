@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+	  <RootNamespace>Aksl.TabHeaderedContent.Assist</RootNamespace>
+	  <Description>Use Wpf TabHeaderedContent Assist.</Description>
+	  <Authors>zheng ming 13529806</Authors>
+	  <Company>Aksl</Company>
+	  <Product>Wpf TabHeaderedContent Assist</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Prism Library\Prism.Core\Prism.Core.csproj" />
+  </ItemGroup>
+
+</Project>
