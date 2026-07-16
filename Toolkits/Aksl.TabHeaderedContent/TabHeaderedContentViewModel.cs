@@ -103,6 +103,11 @@ namespace Aksl.TabHeaderedContent.ViewModels
             TabContentViewModel.RetsetTabItem(tabHeaderedContentInformation);
         }
 
+        public void SetActiveContentItemByName(string name)
+        {
+             TabContentViewModel.SetActiveTabContentItemByName(name);
+        }
+
         public System.Windows.DependencyObject GetStoreViewElementByType(Type viewType)
         {
             var viewElement = TabContentViewModel.GetStoreViewElementByType(viewType);
@@ -110,11 +115,18 @@ namespace Aksl.TabHeaderedContent.ViewModels
             return viewElement;
         }
 
-        public System.Windows.DependencyObject? GetStoreViewElementByName(string name)
+        public System.Windows.DependencyObject? GetStoreTabContentViewElementByName(string name)
         {
             var viewElement = TabContentViewModel.GetStoreViewElementByName(name);
 
             return viewElement;
+        }
+
+        public TabContentItemViewModel GetStoreTabContentItemByName(string name)
+        {
+            var storeTabContentItem = TabContentViewModel.GetStoreTabContentItemViewModelByName(name);
+
+            return storeTabContentItem;
         }
 
         public bool IsActiveTabItem(TabHeaderedContentInformation tabHeaderedContentInformation)

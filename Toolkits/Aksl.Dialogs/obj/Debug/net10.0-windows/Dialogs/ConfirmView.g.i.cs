@@ -76,7 +76,7 @@ namespace Aksl.Dialogs.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Aksl.Dialogs;component/dialogs/confirmview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Aksl.Dialogs;V1.0.0.0;component/dialogs/confirmview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Dialogs\ConfirmView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -140,3 +140,4 @@ C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Ind
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Industry\PipelineView\obj\Debug\net10.0-windows\refint\Aksl.Modules.Pipeline.dll
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Industry\PipelineView\obj\Debug\net10.0-windows\Aksl.Modules.Pipeline.pdb
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Industry\PipelineView\obj\Debug\net10.0-windows\ref\Aksl.Modules.Pipeline.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Industry\PipelineView\obj\Debug\net10.0-windows\PipelineView.sourcelink.json

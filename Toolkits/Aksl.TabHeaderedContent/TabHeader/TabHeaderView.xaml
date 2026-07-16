@@ -96,7 +96,7 @@
     <!--<ScrollViewer HorizontalScrollBarVisibility="Auto"
                   VerticalScrollBarVisibility="Hidden">
         <ItemsControl ItemsSource="{Binding Path=TabHeaderItems}"
-                      ItemContainerStyle="{Binding Source={StaticResource tabHeaderItemsPanelTemplate}}"
+                      ItemsPanel="{Binding Source={StaticResource tabHeaderItemsPanelTemplate}}"
                       ItemTemplate="{Binding Source={StaticResource tabHeaderDataTemplate}}"
                       Background="WhiteSmoke">
         </ItemsControl>

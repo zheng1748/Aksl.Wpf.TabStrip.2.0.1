@@ -128,3 +128,4 @@ C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Oth
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Others\OthersView\obj\Debug\net10.0-windows\refint\Aksl.Modules.Others.dll
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Others\OthersView\obj\Debug\net10.0-windows\Aksl.Modules.Others.pdb
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Others\OthersView\obj\Debug\net10.0-windows\ref\Aksl.Modules.Others.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Others\OthersView\obj\Debug\net10.0-windows\OthersView.sourcelink.json

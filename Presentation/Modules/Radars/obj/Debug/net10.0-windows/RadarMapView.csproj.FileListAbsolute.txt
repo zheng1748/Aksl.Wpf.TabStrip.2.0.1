@@ -140,3 +140,4 @@ C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Rad
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Radars\obj\Debug\net10.0-windows\refint\Aksl.Modules.RadarMap.dll
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Radars\obj\Debug\net10.0-windows\Aksl.Modules.RadarMap.pdb
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Radars\obj\Debug\net10.0-windows\ref\Aksl.Modules.RadarMap.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Radars\obj\Debug\net10.0-windows\RadarMapView.sourcelink.json

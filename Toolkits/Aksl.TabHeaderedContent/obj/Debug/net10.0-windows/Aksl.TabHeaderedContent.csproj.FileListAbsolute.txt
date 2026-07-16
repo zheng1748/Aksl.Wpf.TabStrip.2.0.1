@@ -70,3 +70,4 @@ C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Toolkits\Aksl.TabHeadere
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Toolkits\Aksl.TabHeaderedContent\obj\Debug\net10.0-windows\Aksl.TabHeaderedContent.csproj.CoreCompileInputs.cache
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Toolkits\Aksl.TabHeaderedContent\obj\Debug\net10.0-windows\Aksl.Tab.DC5864D7.Up2Date
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Toolkits\Aksl.TabHeaderedContent\obj\Debug\net10.0-windows\ref\Aksl.TabHeaderedContent.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Toolkits\Aksl.TabHeaderedContent\obj\Debug\net10.0-windows\Aksl.TabHeaderedContent.sourcelink.json

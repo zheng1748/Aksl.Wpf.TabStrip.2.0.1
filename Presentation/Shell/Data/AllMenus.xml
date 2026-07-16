@@ -53,7 +53,7 @@
 		  Level="1"
 		  IconKind="Oar"
 		  IsCacheable="True"
-		  IsNextNavigation="True"
+		  IsNextNavigation="False"
 		  NavigationName="Others">
 	</MenuItem>
 </MenuItem>

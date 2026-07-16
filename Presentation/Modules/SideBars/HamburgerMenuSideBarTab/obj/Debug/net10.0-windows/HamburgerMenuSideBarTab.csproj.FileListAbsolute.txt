@@ -135,3 +135,4 @@ C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Sid
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\SideBars\HamburgerMenuSideBarTab\obj\Debug\net10.0-windows\HamburgerMenuSideBarTab.csproj.CoreCompileInputs.cache
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\SideBars\HamburgerMenuSideBarTab\obj\Debug\net10.0-windows\Hamburge.40A92EC9.Up2Date
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\SideBars\HamburgerMenuSideBarTab\obj\Debug\net10.0-windows\ref\Aksl.Modules.HamburgerMenuSideBarTab.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\SideBars\HamburgerMenuSideBarTab\obj\Debug\net10.0-windows\HamburgerMenuSideBarTab.sourcelink.json

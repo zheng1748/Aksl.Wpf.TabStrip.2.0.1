@@ -1,5 +1,6 @@
 ﻿using Aksl.Dialogs.Services;
 using Aksl.Infrastructure;
+using Aksl.TabHeaderedContent;
 using Aksl.TabStrip;
 using Prism;
 using Prism.Events;
@@ -74,13 +75,14 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
         #region Register SelectedTabItem Empty Event
         private void RegisterOnSelectedTabItemEmptyEvent()
         {
-            _eventAggregator.GetEvent<OnSelectedTabItemEmptyEvent>().Subscribe(async (oatie) =>
+            _eventAggregator.GetEvent<OnSelectedTabHeaderItemEmptyEvent>().Subscribe(async (osthiee) =>
             {
                 try
                 {
                     if (SelectedHamburgerMenuSideBarItem is not null)
                     {
                         SelectedHamburgerMenuSideBarItem.IsSelected = false;
+                        //SelectedHamburgerMenuSideBarItem = null;
                     }
                 }
                 catch (Exception ex)
@@ -94,9 +96,9 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
         #region Register Active TabItem Event
         private void RegisterActiveTabItemEvent()
         {
-            _eventAggregator.GetEvent<OnActiveTabItemEvent>().Subscribe(async (oatie) =>
+            _eventAggregator.GetEvent<OnActiveTabHeaderItemEvent>().Subscribe(async (oathie) =>
             {
-                var currentTabInfo = oatie.SelectedTabInfo;
+                var currentTabInfo = oathie.SelectedTabInfo;
 
                 try
                 {
@@ -105,7 +107,10 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                     #region Set Selected HamburgerMenuItem Method
                     void SetSelectedHamburgerMenuItem()
                     {
-                        var matchHamburgerMenuSideBartem = AllLeafHamburgerMenuSideBarItems.FirstOrDefault(hmi => hmi.Name.Equals(currentTabInfo.Name, StringComparison.InvariantCultureIgnoreCase));
+                        //var hamburgerMenuSideBarItemViewModel = AllLeafHamburgerMenuSideBarItems.FirstOrDefault(hmi => hmi.Name.Equals(currentTabInfo.Name, StringComparison.InvariantCultureIgnoreCase) ||
+                        //                                                                                               hmi.Title.Equals(currentTabInfo.Title, StringComparison.InvariantCultureIgnoreCase));
+                        var matchHamburgerMenuSideBartem = AllLeafHamburgerMenuSideBarItems.FirstOrDefault(hmi => hmi.Name.Equals(currentTabInfo.Name, StringComparison.InvariantCultureIgnoreCase) ||
+                                                                                                                  hmi.Title.Equals(currentTabInfo.Title, StringComparison.InvariantCultureIgnoreCase));
 
                         if (matchHamburgerMenuSideBartem is not null)
                         {
@@ -117,6 +122,7 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                             if (SelectedHamburgerMenuSideBarItem is not null)
                             {
                                 matchHamburgerMenuSideBartem.IsSelected = true;
+                                //SelectedHamburgerMenuSideBarItem = matchHamburgerMenuSideBartem;
                                 Debug.Assert(AllLeafHamburgerMenuSideBarItems.Count(hmi => hmi.IsSelected) == 1);
                             }
                         }

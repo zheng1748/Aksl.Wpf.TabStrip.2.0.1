@@ -17,6 +17,7 @@ using Prism.Regions;
 using Prism.Unity;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
@@ -78,7 +79,7 @@ public class HamburgerMenuSideBarItemViewModel : Mvvm.NodeViewModel
             {
                 if (field && IsLeaf)
                 {
-                    AddViewToRightTabContent().Await();
+                    AddViewToRightTabContentAsync().Await();
                 }
             }
         }
@@ -96,74 +97,135 @@ public class HamburgerMenuSideBarItemViewModel : Mvvm.NodeViewModel
 
         set => SetProperty<bool>(ref field, value);
     } = true;
+
+    private TabViewModel TopTabViewModel { get; set; } = new();
     #endregion
 
     #region Add View To RightTab Method
-    public async Task AddViewToRightTabContent()
+    public async Task AddViewToRightTabContentAsync()
     {
-        //var topTabViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabViewModel>(name: ActiveContentNames.TabStripHamburgerMenuSideBar);
-        //if (topTabViewModel.IsActiveTabItemByName(_menuItem.Name))
-        //{
-        //    return;
-        //}
+        var dialogViewService = PrismUnityExtensions.GetDialogViewService();
 
-        var tabHeaderedContentViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabHeaderedContentViewModel>(name: ActiveContentNames.TabHeaderedContentHamburgerMenuSideBar);
-        if (tabHeaderedContentViewModel.IsActiveTabItemByName(_menuItem.Name))
+        try
         {
-            return;
-        }
+            //var topTabViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabViewModel>(name: ActiveContentNames.TabStripHamburgerMenuSideBar);
+            //if (topTabViewModel.IsActiveTabItemByName(_menuItem.Name))
+            //{
+            //    return;
+            //}
 
-        if (_menuItem.HasNextSubMenu())
-        {
-            TabViewModel topTabViewModel;
-            var topTabView = FindTopTabView(tabHeaderedContentViewModel);
-            if (topTabView is null)
+            var tabHeaderedContentViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabHeaderedContentViewModel>(name: ActiveContentNames.TabHeaderedContentHamburgerMenuSideBar);
+            if (tabHeaderedContentViewModel.IsActiveTabItemByName(_menuItem.Name))
             {
-                topTabViewModel = new TabViewModel();
-                topTabView = new TabView
-                {
-                    DataContext = topTabViewModel
-                };
-
-                TabInformation topTabInfo = new()
-                {
-                    Name = _menuItem.Name,
-                    Title = _menuItem.Title,
-                    IconKind = _menuItem.IconKind,
-                    ViewName = _menuItem.ViewName,
-                    CloseTabButtonVisibility = Visibility.Visible
-                };
-                topTabViewModel.Add(topTabInfo);
-
-                TabHeaderedContentInformation tabHeaderedContentInfo = new()
-                {
-                    Name = _menuItem.Name,
-                    Title = _menuItem.Title,
-                    IconKind = _menuItem.IconKind,
-                    ViewElement = topTabView
-                }; 
-                tabHeaderedContentViewModel.Add(tabHeaderedContentInfo);
-            }
-            else 
-            {
-                topTabViewModel= topTabView.DataContext as TabViewModel;
+                return;
             }
 
-          //CreateTopTabView(_menuItem, topTabViewModel);
+            if (_menuItem.HasNextSubMenu())
+            {
+                #region Method
+                //TabViewModel topTabViewModel;
+                //var topTabView = tabHeaderedContentViewModel.GetStoreTabContentViewElementByName(_menuItem.Name) as TabView;
+                //if (topTabView is null)
+                //{
+                //    topTabViewModel = new();
+                //    topTabView = new()
+                //    {
+                //        DataContext = topTabViewModel
+                //    };
 
-            await AddSubTabViewAsync(_menuItem, topTabViewModel);
+                //    topTabViewModel.Add(new()
+                //    {
+                //        Name = _menuItem.Name,
+                //        Title = _menuItem.Title,
+                //        IconKind = _menuItem.IconKind,
+                //        ViewName = _menuItem.ViewName,
+                //        CloseTabButtonVisibility = Visibility.Collapsed
+                //    });
+
+                //    CreateTopTabHeaderedContent(_menuItem, tabHeaderedContentViewModel);
+                //    var tabContentItemViewModel = tabHeaderedContentViewModel.GetStoreTabContentItemByName(_menuItem.Name);
+                //    tabContentItemViewModel.ViewElement = topTabView;
+                //}
+                //else
+                //{
+                //    CreateTopTabHeaderedContent(_menuItem, tabHeaderedContentViewModel);
+                //    topTabViewModel = topTabView.DataContext as TabViewModel;
+                //}
+                //await AddSubTabViewAsync(_menuItem, topTabViewModel);
+                #endregion
+
+                //TabViewModel topTabViewModel = new();
+                //topTabViewModel.Add(new()
+                //{
+                //    Name = _menuItem.Name,
+                //    Title = _menuItem.Title,
+                //    IconKind = _menuItem.IconKind,
+                //    ViewName = _menuItem.ViewName,
+                //    CloseTabButtonVisibility = Visibility.Collapsed
+                //});
+
+                TabViewModel mainTabViewModel = default;
+                var mainTabView = tabHeaderedContentViewModel.GetStoreTabContentViewElementByName(_menuItem.Name) as TabView;
+                if (mainTabView is null)
+                {
+                    mainTabViewModel = new();
+                    mainTabView = new()
+                    {
+                        DataContext = mainTabViewModel
+                    };
+
+                    CreateTopTabHeaderedContent(_menuItem, tabHeaderedContentViewModel);
+                    var tabContentItemViewModel = tabHeaderedContentViewModel.GetStoreTabContentItemByName(_menuItem.Name);
+                    tabContentItemViewModel.ViewElement = mainTabView;
+
+                    await InitializeMainTabViewAsync();
+                }
+                else
+                {
+                    mainTabViewModel = mainTabView.DataContext as TabViewModel;
+
+                    CreateTopTabHeaderedContent(_menuItem, tabHeaderedContentViewModel);
+                }
+
+                async Task InitializeMainTabViewAsync()
+                {
+                    TabViewModel topTabViewModel = new();
+                    CreateTopTabView(_menuItem, topTabViewModel);
+
+                    await AddSubTabViewAsync(_menuItem, topTabViewModel);
+
+                    var subTabView = topTabViewModel.StoreTabItems.FirstOrDefault(sti => sti.ViewElement is TabView);
+                    if (subTabView is not null)
+                    {
+                        var subTabViewModel = (subTabView.ViewElement as TabView).DataContext as TabViewModel;
+                        foreach (var sti in subTabViewModel.StoreTabItems)
+                        {
+                            var storeTabItem = mainTabViewModel.GetStoreTabItemViewModelByInfo(sti.TabInformation);
+                            if (storeTabItem is null)
+                            {
+                                mainTabViewModel.Add(new TabInformation() { Name = sti.TabInformation.Name, Title = sti.TabInformation.Title, ViewName = "", ViewElement = sti.ViewElement });
+                            }
+                            else
+                            {
+                                mainTabViewModel.RetsetTabItemNoActive(sti.TabInformation);
+                            }
+                        }
+                    }
+                }
+            }
+            else if (_menuItem.HasViewName())
+            {
+                AddViewToTabContent(_menuItem, tabHeaderedContentViewModel);
+            }
         }
-        else if (_menuItem.HasViewName())
+        catch (Exception ex) when (!string.IsNullOrEmpty(ex.InnerException?.Message))
         {
-            AddViewToTabContent(_menuItem, tabHeaderedContentViewModel);
+            await dialogViewService.AlertAsync(message: $"{ex.InnerException.Message}", title: $"Error:Add Ta View");
         }
-    }
-
-    private TabView FindTopTabView(TabHeaderedContentViewModel tabHeaderedContentViewModel)
-    {
-        var tabView = tabHeaderedContentViewModel.GetStoreViewElementByType(typeof(TabView)) as TabView;
-       
-        return tabView;
+        catch (Exception ex)
+        {
+            await dialogViewService.AlertAsync(message: $"{ex.Message}", title: $"Error:Add Ta View");
+        }
     }
 
     private void AddViewToTabContent(MenuItem menuItem, TabHeaderedContentViewModel tabHeaderedContentViewModel)
@@ -180,7 +242,7 @@ public class HamburgerMenuSideBarItemViewModel : Mvvm.NodeViewModel
                 ViewName = menuItem.ViewName
             };
 
-            var currentView = tabHeaderedContentViewModel.GetStoreViewElementByName(menuItem.Name);
+            var currentView = tabHeaderedContentViewModel.GetStoreTabContentViewElementByName(menuItem.Name);
             if (currentView is not null)
             {
                 if (menuItem.IsCacheable)
@@ -202,6 +264,33 @@ public class HamburgerMenuSideBarItemViewModel : Mvvm.NodeViewModel
             string msg = !string.IsNullOrEmpty(ex.InnerException?.Message) ? ex.InnerException.Message : ex.Message;
 
             _dialogViewService.AlertAsync(message: $"Unable to find \"{msg}\".", title: $"Error:Missing Type").Await();
+        }
+    }
+
+    private void CreateTopTabHeaderedContent(MenuItem menuItem, TabHeaderedContentViewModel tabHeaderedContentViewModel)
+    {
+        TabHeaderedContentInformation tabHeaderedContentInfo = new()
+        {
+            Name = menuItem.Name,
+            Title = menuItem.Title,
+            ViewName = menuItem.ViewName
+        };
+
+        var currentView = tabHeaderedContentViewModel.GetStoreTabContentViewElementByName(menuItem.Name);
+        if (currentView is not null)
+        {
+            if (menuItem.IsCacheable)
+            {
+                tabHeaderedContentViewModel.SetTabItem(tabHeaderedContentInfo);
+            }
+            else
+            {
+                tabHeaderedContentViewModel.RetsetTabItem(tabHeaderedContentInfo);
+            }
+        }
+        else
+        {
+            tabHeaderedContentViewModel.Add(tabHeaderedContentInfo);
         }
     }
 

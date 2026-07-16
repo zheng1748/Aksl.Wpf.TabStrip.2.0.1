@@ -52,7 +52,7 @@ namespace Aksl.TabStrip.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Aksl.TabStrip;component/tabitemview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Aksl.TabStrip;V1.0.0.0;component/tabitemview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\TabItemView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

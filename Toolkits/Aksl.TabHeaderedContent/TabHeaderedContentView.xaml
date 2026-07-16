@@ -44,8 +44,8 @@
                 CornerRadius="5"
                 BorderBrush="Transparent">
             <Grid>
-                <!--<views:TabContentView DataContext="{Binding Path=TabContentViewModel}" />-->
-                <views:TabContentItemView DataContext="{Binding Path=TabContentViewModel.SelectedTabContentItem}" />
+                <views:TabContentView DataContext="{Binding Path=TabContentViewModel}" />
+                <!--<views:TabContentItemView DataContext="{Binding Path=TabContentViewModel.SelectedTabContentItem}" />-->
             </Grid>
         </Border>
     </Grid>

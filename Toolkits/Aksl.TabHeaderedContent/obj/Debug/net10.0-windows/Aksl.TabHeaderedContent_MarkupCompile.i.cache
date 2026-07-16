@@ -16,5 +16,5 @@ TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_O
 213-1479733074
 TabContent\TabContentItemView.xaml;TabContent\TabContentView.xaml;TabHeaderedContentView.xaml;TabHeader\TabHeaderItemView.xaml;TabHeader\TabHeaderView.xaml;
 
-True
+False
 

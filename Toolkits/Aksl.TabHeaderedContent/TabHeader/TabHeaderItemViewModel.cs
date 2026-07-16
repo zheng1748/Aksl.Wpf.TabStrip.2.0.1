@@ -39,20 +39,20 @@ namespace Aksl.TabHeaderedContent.ViewModels
         public string Title => _tabHeaderedContentInformation.Title;
         public string ViewName => _tabHeaderedContentInformation.ViewName;
 
-        private Type _viewElementType = default;
-        public Type ViewElementType
-        {
-            get
-            {
-                if (_viewElementType is null)
-                {
-                    string viewTypeAssemblyQualifiedName = _tabHeaderedContentInformation.ViewName;
-                    _viewElementType = Type.GetType(viewTypeAssemblyQualifiedName);
-                }
+        //private Type _viewElementType = default;
+        //public Type ViewElementType
+        //{
+        //    get
+        //    {
+        //        if (_viewElementType is null)
+        //        {
+        //            string viewTypeAssemblyQualifiedName = _tabHeaderedContentInformation.ViewName;
+        //            _viewElementType = Type.GetType(viewTypeAssemblyQualifiedName);
+        //        }
 
-                return _viewElementType;
-            }
-        }
+        //        return _viewElementType;
+        //    }
+        //}
 
         //public PackIconKind IconKind
         //{
@@ -66,49 +66,53 @@ namespace Aksl.TabHeaderedContent.ViewModels
         //    }
         //}
 
-        private bool _isSelected = false;
         public bool IsSelected
         {
-            get => _isSelected;
+            get => field;
             set
             {
-                if (SetProperty<bool>(ref _isSelected, value))
+                if (SetProperty<bool>(ref field, value))
                 {
-                    if (_isSelected)
+                    if (field)
                     {
-                        _eventAggregator.GetEvent<OnActiveTabHeaderItemEvent>().Publish(new() { SelectedTabInfo= _tabHeaderedContentInformation });
+                        _eventAggregator.GetEvent<OnActiveTabHeaderItemEvent>().Publish(new() { SelectedTabInfo = _tabHeaderedContentInformation });
                     }
                 }
             }
         }
 
-        private Visibility _closeTabButtonVisibility = Visibility.Visible;
         public Visibility CloseTabButtonVisibility
         {
-            get => _closeTabButtonVisibility;
-            set => SetProperty<Visibility>(ref _closeTabButtonVisibility, value);
-        }
+            get => field;
+            set => SetProperty<Visibility>(ref field, value);
+        } = Visibility.Visible;
         #endregion
 
         #region MouseLeftButton Down
         public void ExecuteMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            if(sender is UserControl uc) 
+            if (sender is UserControl uc)
             {
-                IsSelected=true; 
+                IsSelected = true;
             }
         }
         #endregion
 
         #region CloseTab Command
-        public event EventHandler RequestClose;
+        //public event EventHandler RequestClose;
+        private event EventHandler _requestCloseEventHandler;
+        public event EventHandler RequestClose
+        {
+            add { _requestCloseEventHandler += value; }
+            remove { _requestCloseEventHandler -= value; }
+        }
         public ICommand ExecuteCloseTabCommand { get; private set; }
 
         private void CreateExecuteCloseTabCommand()
         {
             ExecuteCloseTabCommand = new DelegateCommand(() =>
             {
-                RequestClose?.Invoke(this, EventArgs.Empty);
+                _requestCloseEventHandler?.Invoke(this, EventArgs.Empty);
             },
             () =>
             {

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Use Wpf Tab ActiveContent Assist.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fea54fccb60905b859e5f5e71757fba300d39f8c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Wpf Tab ActiveContents Assist")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aksl.TabActiveContents.Assist")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

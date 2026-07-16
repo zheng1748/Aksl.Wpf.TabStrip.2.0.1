@@ -360,7 +360,7 @@ namespace Aksl.ActiveContents.ViewModels
 
         public System.Windows.DependencyObject GetStoreViewElementByType(Type viewType)
         {
-            var storeContentItem = StoreContentItems.FirstOrDefault(stc => stc.ViewElementType == viewType);
+            var storeContentItem = StoreContentItems.FirstOrDefault(stc => stc.ViewElement.GetType() == viewType);
 
             return storeContentItem?.ViewElement;
         }

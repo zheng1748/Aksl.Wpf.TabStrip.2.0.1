@@ -52,7 +52,8 @@ namespace Aksl.ActiveContents.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Aksl.ActiveContents;component/activecontents/activecontentitemview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Aksl.ActiveContents;V1.0.0.0;component/activecontents/activecontentitemview.xaml" +
+                    "", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\ActiveContents\ActiveContentItemView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
