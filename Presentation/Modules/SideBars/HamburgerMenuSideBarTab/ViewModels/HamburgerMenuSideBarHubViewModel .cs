@@ -65,11 +65,11 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
             get => field;
             set => SetProperty(ref field, value);
         }
-        public TabViewModel TabStripViewModel
-        {
-            get => field;
-            set => SetProperty(ref field, value);
-        }
+        //public TabViewModel TabStripViewModel
+        //{
+        //    get => field;
+        //    set => SetProperty(ref field, value);
+        //}
        
         public HamburgerMenuSideBarViewModel TopHamburgerMenuSideBar { get; set; }
 
@@ -157,10 +157,10 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
 
                 TabHeaderedContentViewModel = tabHeaderedContentViewModel;
 
-                _container.RegisterSingleton(from: typeof(TabViewModel), to: typeof(TabViewModel), name: ActiveContentNames.TabStripHamburgerMenuSideBar);
-                var tabStripViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabViewModel>(name: ActiveContentNames.TabStripHamburgerMenuSideBar);
+                //_container.RegisterSingleton(from: typeof(TabViewModel), to: typeof(TabViewModel), name: ActiveContentNames.TabStripHamburgerMenuSideBar);
+                //var tabStripViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabViewModel>(name: ActiveContentNames.TabStripHamburgerMenuSideBar);
 
-                TabStripViewModel = tabStripViewModel;
+                //TabStripViewModel = tabStripViewModel;
             }
 
             await RegisterLeftPaneActiveContentAsync();
