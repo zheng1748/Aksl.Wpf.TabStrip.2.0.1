@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aksl")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ff2e92df061ec50bb30c7eb0d3d9a2359ef9267")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f90e958b10b88018108dce177e99e33059320538")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aksl.Modules.Thermometer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aksl.Modules.Thermometer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

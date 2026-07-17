@@ -43,11 +43,21 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
 
         #region Properties
         public ObservableCollection<HamburgerMenuSideBarItemViewModel> AllLeafHamburgerMenuSideBarItems { get; set; }
-
+        public HamburgerMenuSideBarItemViewModel LastHamburgerMenuSideBarItemWithNotSubMenu { get; set; }
         public HamburgerMenuSideBarItemViewModel SelectedHamburgerMenuSideBarItem
         {
-            get; 
-            set => SetProperty(ref field, value);
+            get => field;
+            set
+            {
+                if (SetProperty(ref field, value))
+                {
+                    if (LastHamburgerMenuSideBarItemWithNotSubMenu != field &&
+                       (field.IsAddViewToRightTabContent || field.IsNavigationToRightTabContent))
+                    {
+                        LastHamburgerMenuSideBarItemWithNotSubMenu = field;
+                    }
+                }
+            }
         }
 
         public bool IsPaneOpen

@@ -36,11 +36,10 @@ namespace Aksl.TabHeaderedContent.ViewModels
         public ObservableCollection<TabHeaderItemViewModel> ActiveTabHeaderItems { get; }
         public List<TabHeaderItemViewModel> StoreTabHeaderItems { get; }
 
-        private TabHeaderItemViewModel _selectedTabHeaderItem;
         public TabHeaderItemViewModel SelectedTabHeaderItem
         {
-            get => _selectedTabHeaderItem;
-            set => SetProperty<TabHeaderItemViewModel>(ref _selectedTabHeaderItem, value);
+            get =>field;
+            set => SetProperty<TabHeaderItemViewModel>(ref field, value);
         }
         #endregion
 

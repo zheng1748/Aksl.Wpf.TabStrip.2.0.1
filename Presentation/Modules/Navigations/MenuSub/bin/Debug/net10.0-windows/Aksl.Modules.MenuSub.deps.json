@@ -452,8 +452,8 @@
         "dependencies": {
           "Aksl.ActiveContents": "1.0.0",
           "Aksl.Dialogs": "1.0.0",
-          "Aksl.TabStrips": "1.0.0",
-          "Aksl.TabStrips.Assist": "1.0.0",
+          "Aksl.TabStrip": "1.0.0",
+          "Aksl.TabStrip.Assist": "1.0.0",
           "Aksl.Toolkit": "1.0.0",
           "CommonServiceLocator": "2.0.7",
           "Microsoft.Extensions.Caching.Abstractions": "10.0.9",
@@ -487,26 +487,26 @@
           }
         }
       },
-      "Aksl.TabStrips/1.0.0": {
+      "Aksl.TabStrip/1.0.0": {
         "dependencies": {
-          "Aksl.TabStrips.Assist": "1.0.0",
+          "Aksl.TabStrip.Assist": "1.0.0",
           "Prism.Core": "1.0.0",
           "Prism.Unity": "1.0.0",
           "Prism.Wpf": "1.0.0"
         },
         "runtime": {
-          "Aksl.TabStrips.dll": {
+          "Aksl.TabStrip.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
       },
-      "Aksl.TabStrips.Assist/1.0.0": {
+      "Aksl.TabStrip.Assist/1.0.0": {
         "dependencies": {
           "Prism.Core": "1.0.0"
         },
         "runtime": {
-          "Aksl.TabStrips.Assist.dll": {
+          "Aksl.TabStrip.Assist.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -836,12 +836,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Aksl.TabStrips/1.0.0": {
+    "Aksl.TabStrip/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Aksl.TabStrips.Assist/1.0.0": {
+    "Aksl.TabStrip.Assist/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

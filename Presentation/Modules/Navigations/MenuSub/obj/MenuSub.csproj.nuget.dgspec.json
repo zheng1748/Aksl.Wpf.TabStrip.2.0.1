@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Presentation\\Modules\\Navigations\\MenuSub\\MenuSub.csproj": {}
+    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Presentation\\Modules\\Navigations\\MenuSub\\MenuSub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj": {
+    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj",
         "projectName": "Aksl.Infrastructure",
-        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\zheng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Infrastructure\\Aksl.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Infrastructure\\Aksl.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,29 +33,29 @@
             "framework": "net10.0-windows7.0",
             "targetAlias": "net10.0-windows",
             "projectReferences": {
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.ActiveContents\\Aksl.ActiveContents.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.ActiveContents\\Aksl.ActiveContents.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.ActiveContents\\Aksl.ActiveContents.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.ActiveContents\\Aksl.ActiveContents.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips.Assist\\Aksl.TabStrips.Assist.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips.Assist\\Aksl.TabStrips.Assist.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\Aksl.TabStrip.Assist.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\Aksl.TabStrip.Assist.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips\\Aksl.TabStrips.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips\\Aksl.TabStrips.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip\\Aksl.TabStrip.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip\\Aksl.TabStrip.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
               }
             }
           }
@@ -475,14 +475,14 @@
         }
       }
     },
-    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Presentation\\Modules\\Navigations\\MenuSub\\MenuSub.csproj": {
+    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Presentation\\Modules\\Navigations\\MenuSub\\MenuSub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Presentation\\Modules\\Navigations\\MenuSub\\MenuSub.csproj",
+        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Presentation\\Modules\\Navigations\\MenuSub\\MenuSub.csproj",
         "projectName": "Aksl.Modules.MenuSub",
-        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Presentation\\Modules\\Navigations\\MenuSub\\MenuSub.csproj",
+        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Presentation\\Modules\\Navigations\\MenuSub\\MenuSub.csproj",
         "packagesPath": "C:\\Users\\zheng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Presentation\\Modules\\Navigations\\MenuSub\\obj\\",
+        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Presentation\\Modules\\Navigations\\MenuSub\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -504,26 +504,26 @@
             "framework": "net10.0-windows7.0",
             "targetAlias": "net10.0-windows",
             "projectReferences": {
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
               }
             }
           }
@@ -863,14 +863,14 @@
         }
       }
     },
-    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.ActiveContents\\Aksl.ActiveContents.csproj": {
+    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.ActiveContents\\Aksl.ActiveContents.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.ActiveContents\\Aksl.ActiveContents.csproj",
+        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.ActiveContents\\Aksl.ActiveContents.csproj",
         "projectName": "Aksl.ActiveContents",
-        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.ActiveContents\\Aksl.ActiveContents.csproj",
+        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.ActiveContents\\Aksl.ActiveContents.csproj",
         "packagesPath": "C:\\Users\\zheng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.ActiveContents\\obj\\",
+        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.ActiveContents\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -892,14 +892,14 @@
             "framework": "net10.0-windows7.0",
             "targetAlias": "net10.0-windows",
             "projectReferences": {
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
               }
             }
           }
@@ -1239,14 +1239,14 @@
         }
       }
     },
-    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj": {
+    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj",
+        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj",
         "projectName": "Aksl.Dialogs",
-        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj",
+        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Dialogs\\Aksl.Dialogs.csproj",
         "packagesPath": "C:\\Users\\zheng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Dialogs\\obj\\",
+        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Dialogs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1268,17 +1268,17 @@
             "framework": "net10.0-windows7.0",
             "targetAlias": "net10.0-windows",
             "projectReferences": {
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
               }
             }
           }
@@ -1618,14 +1618,14 @@
         }
       }
     },
-    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips.Assist\\Aksl.TabStrips.Assist.csproj": {
+    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\Aksl.TabStrip.Assist.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips.Assist\\Aksl.TabStrips.Assist.csproj",
-        "projectName": "Aksl.TabStrips.Assist",
-        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips.Assist\\Aksl.TabStrips.Assist.csproj",
+        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\Aksl.TabStrip.Assist.csproj",
+        "projectName": "Aksl.TabStrip.Assist",
+        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\Aksl.TabStrip.Assist.csproj",
         "packagesPath": "C:\\Users\\zheng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips.Assist\\obj\\",
+        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1647,8 +1647,8 @@
             "framework": "net10.0-windows7.0",
             "targetAlias": "net10.0-windows",
             "projectReferences": {
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
               }
             }
           }
@@ -1982,14 +1982,14 @@
         }
       }
     },
-    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips\\Aksl.TabStrips.csproj": {
+    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip\\Aksl.TabStrip.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips\\Aksl.TabStrips.csproj",
-        "projectName": "Aksl.TabStrips",
-        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips\\Aksl.TabStrips.csproj",
+        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip\\Aksl.TabStrip.csproj",
+        "projectName": "Aksl.TabStrip",
+        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip\\Aksl.TabStrip.csproj",
         "packagesPath": "C:\\Users\\zheng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips\\obj\\",
+        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2011,17 +2011,17 @@
             "framework": "net10.0-windows7.0",
             "targetAlias": "net10.0-windows",
             "projectReferences": {
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips.Assist\\Aksl.TabStrips.Assist.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.TabStrips.Assist\\Aksl.TabStrips.Assist.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\Aksl.TabStrip.Assist.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\Aksl.TabStrip.Assist.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
               }
             }
           }
@@ -2355,14 +2355,14 @@
         }
       }
     },
-    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj": {
+    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj",
+        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj",
         "projectName": "Aksl.Toolkit.Controls",
-        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj",
+        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj",
         "packagesPath": "C:\\Users\\zheng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit.Controls\\obj\\",
+        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit.Controls\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2715,14 +2715,14 @@
         }
       }
     },
-    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj": {
+    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj",
+        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj",
         "projectName": "Aksl.Toolkit",
-        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj",
+        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit\\Aksl.Toolkit.csproj",
         "packagesPath": "C:\\Users\\zheng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit\\obj\\",
+        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2744,17 +2744,17 @@
             "framework": "net10.0-windows7.0",
             "targetAlias": "net10.0-windows",
             "projectReferences": {
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.Toolkit.Controls\\Aksl.Toolkit.Controls.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
               }
             }
           }
@@ -3094,14 +3094,14 @@
         }
       }
     },
-    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
+    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj",
+        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj",
         "projectName": "Prism.Core",
-        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj",
+        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj",
         "packagesPath": "C:\\Users\\zheng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\obj\\",
+        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -3162,14 +3162,14 @@
         }
       }
     },
-    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
+    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj",
+        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj",
         "projectName": "Prism.Unity",
-        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj",
+        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\Prism.Unity.Wpf.csproj",
         "packagesPath": "C:\\Users\\zheng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\obj\\",
+        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Unity.Wpf\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -3192,11 +3192,11 @@
             "framework": "net8.0-windows7.0",
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
               },
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj"
               }
             }
           }
@@ -3246,14 +3246,14 @@
         }
       }
     },
-    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
+    "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj",
+        "projectUniqueName": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj",
         "projectName": "Prism.Wpf",
-        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj",
+        "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\Prism.Wpf.csproj",
         "packagesPath": "C:\\Users\\zheng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Wpf\\obj\\",
+        "outputPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Wpf\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -3276,8 +3276,8 @@
             "framework": "net8.0-windows7.0",
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
-                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.0\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Prism Library\\Prism.Core\\Prism.Core.csproj"
               }
             }
           }

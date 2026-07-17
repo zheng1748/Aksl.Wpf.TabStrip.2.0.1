@@ -957,6 +957,29 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "Aksl.Modules.MenuSub/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Aksl.Dialogs": "1.0.0",
+          "Aksl.Infrastructure": "1.0.0",
+          "Aksl.Toolkit": "1.0.0",
+          "Aksl.Toolkit.Controls": "1.0.0",
+          "Prism.Core": "1.0.0",
+          "Prism.Unity": "1.0.0",
+          "Prism.Wpf": "1.0.0",
+          "Unity": "5.11.10"
+        },
+        "compile": {
+          "bin/placeholder/Aksl.Modules.MenuSub.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aksl.Modules.MenuSub.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Aksl.Modules.Others/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -2395,6 +2418,11 @@
       "path": "../Modules/Home/Home.csproj",
       "msbuildProject": "../Modules/Home/Home.csproj"
     },
+    "Aksl.Modules.MenuSub/1.0.0": {
+      "type": "project",
+      "path": "../Modules/Navigations/MenuSub/MenuSub.csproj",
+      "msbuildProject": "../Modules/Navigations/MenuSub/MenuSub.csproj"
+    },
     "Aksl.Modules.Others/1.0.0": {
       "type": "project",
       "path": "../Modules/Others/OthersView/OthersView.csproj",
@@ -2473,6 +2501,7 @@
       "Aksl.Modules.HamburgerMenuSideBarTab >= 1.0.0",
       "Aksl.Modules.HamburgerMenuTreeSideBarTab >= 1.0.0",
       "Aksl.Modules.Home >= 1.0.0",
+      "Aksl.Modules.MenuSub >= 1.0.0",
       "Aksl.Modules.Others >= 1.0.0",
       "Aksl.Modules.Pipeline >= 1.0.0",
       "Aksl.Modules.RadarMap >= 1.0.0",
@@ -2557,6 +2586,9 @@
             },
             "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Presentation\\Modules\\Industry\\ThermometerrView\\ThermometerView.csproj": {
               "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Presentation\\Modules\\Industry\\ThermometerrView\\ThermometerView.csproj"
+            },
+            "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Presentation\\Modules\\Navigations\\MenuSub\\MenuSub.csproj": {
+              "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Presentation\\Modules\\Navigations\\MenuSub\\MenuSub.csproj"
             },
             "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Presentation\\Modules\\Others\\OthersView\\OthersView.csproj": {
               "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Presentation\\Modules\\Others\\OthersView\\OthersView.csproj"
