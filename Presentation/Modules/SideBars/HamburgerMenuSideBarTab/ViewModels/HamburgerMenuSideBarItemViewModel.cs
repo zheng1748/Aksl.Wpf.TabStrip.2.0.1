@@ -68,8 +68,8 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                            _menuItem.HasNextSubMenu();
         public bool HasViewName =>
                            _menuItem.HasViewName();
-        //public bool IsSetLeftPaneActiveContentItem =>
-        //                    _menuItem.HasNextSubMenu() && !_menuItem.HasViewName() && !_menuItem.IsNexApplication;
+        public bool IsSetLeftPaneActiveContentItem =>
+                            _menuItem.HasNextSubMenu() && !_menuItem.HasViewName() && !_menuItem.IsNexApplication;
         public bool IsNavigationToRightTabContent =>
                              IsLeaf && _menuItem.HasNextSubMenu() && _menuItem.HasViewName() && _menuItem.IsNexApplication;
         public bool IsAddViewsToRightTabContent =>
@@ -175,6 +175,7 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                     //await AddSubTabViewAsync(_menuItem, topTabViewModel);
                     #endregion
 
+                    bool isSetFirst = false;
                     TabViewModel mainTabViewModel = default;
                     var mainTabView = tabHeaderedContentViewModel.GetStoreTabContentViewElementByName(menuItem.Name) as TabView;
                     if (mainTabView is null)
@@ -196,8 +197,8 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                     else
                     {
                         mainTabViewModel = mainTabView.DataContext as TabViewModel;
-
-                        CreateTopTabHeaderedContent(_menuItem, tabHeaderedContentViewModel);
+                        CreateTopTabHeaderedContent(menuItem, tabHeaderedContentViewModel);
+                        await InitializeMainTabViewCoreAsync();
                     }
 
                     async Task InitializeMainTabViewAsync()
@@ -232,26 +233,30 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                             }
                         }
                     }
+                    if (isSetFirst)
+                    {
+                        mainTabViewModel.SetFirstActiveTabItem();
+                    }
 
                     async Task InitializeMainTabViewCoreAsync()
                     {
                         IEnumerable<Aksl.Infrastructure.MenuItem> subMenus = await menuItem.GetNextSubMenuAsync();
                         foreach (var smi in subMenus)
                         {
-                            var subTabView = mainTabViewModel.GetStoreViewElementByName(menuItem.Name) as TabView;
+                            var subTabView = mainTabViewModel.GetStoreViewElementByName(smi.Name) as TabView;
                             if (subTabView is null)
                             {
+                                isSetFirst = true;
                                 CreateTopTabView(smi, mainTabViewModel);
-
                                 await AddSubTabViewAsync(smi, mainTabViewModel);
                             }
                             else
                             {
                                 CreateTopTabView(smi, mainTabViewModel);
+                                await AddSubTabViewAsync(smi, mainTabViewModel);
                             }
                         }
-                    }
-                }
+                    }                }
                 //else if (_menuItem.HasViewName())
                 //{
                 //    AddViewToTabContent(_menuItem, tabHeaderedContentViewModel);
@@ -302,7 +307,7 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                 Title = menuItem.Title,
                 IconKind = menuItem.IconKind,
                 ViewName = menuItem.ViewName,
-                CloseTabButtonVisibility = Visibility.Visible
+                CloseTabButtonVisibility = Visibility.Collapsed
             };
 
             var currentView = tabViewModel.GetStoreViewElementByName(menuItem.Name);
@@ -310,11 +315,13 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
             {
                 if (menuItem.IsCacheable)
                 {
-                    tabViewModel.SetActiveTabItemByName(menuItem.Name);
+                   // tabViewModel.SetActiveTabItemByName(menuItem.Name);
                 }
                 else
                 {
-                    tabViewModel.RetsetTabItem(topTabInfo);
+                    //tabViewModel.RetsetTabItem(topTabInfo);
+
+                    tabViewModel.RetsetTabItemNoActive(topTabInfo);
                 }
             }
             else

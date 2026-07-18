@@ -32,7 +32,7 @@
 			  Name="Thermometers"
 			  Title="温度计"
 			  Level="1"
-		  IconKind="ThermometerAlert"  
+		      IconKind="ThermometerAlert"  
 			  IsCacheable="True"
 			  ModuleName=""
 			  ViewName=""
@@ -43,7 +43,8 @@
 			  Name="CoolingTowers"
 			  Title="冷却"
 			  Level="1"
-		  IconKind="HeatCool"  IsCacheable="True"
+		      IconKind="HeatCool" 
+			  IsCacheable="True"
 			  ModuleName=""
 			  ViewName=""
 			  IsNextNavigation="False"
@@ -53,10 +54,11 @@
 			  Name="AirCompressers"
 			  Title="空气压缩"
 			  Level="1"
-		  IconKind="Compress"  IsCacheable="True"
+		      IconKind="Compress"
+			  IsCacheable="True"
 			  ModuleName=""
 			  ViewName=""
-		       IsNextNavigation="True"
+		      IsNextNavigation="True"
 			  NavigationName="AirCompressers">
 	</MenuItem>
 </MenuItem>

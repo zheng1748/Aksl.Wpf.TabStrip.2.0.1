@@ -24,7 +24,6 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
         #region Members
         protected readonly IEventAggregator _eventAggregator; 
         private readonly IDialogViewService _dialogViewService;
-        private readonly IMenuService _menuService;
         #endregion
 
         #region Constructors
@@ -32,7 +31,6 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
         {
             _eventAggregator = PrismUnityExtensions.GetEventAggregator();
             _dialogViewService = PrismUnityExtensions.GetDialogViewService();
-            _menuService = PrismUnityExtensions.GetMenuService(); 
 
             AllLeafHamburgerMenuSideBarItems = new();
 
@@ -43,21 +41,10 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
 
         #region Properties
         public ObservableCollection<HamburgerMenuSideBarItemViewModel> AllLeafHamburgerMenuSideBarItems { get; set; }
-        public HamburgerMenuSideBarItemViewModel LastHamburgerMenuSideBarItemWithNotSubMenu { get; set; }
         public HamburgerMenuSideBarItemViewModel SelectedHamburgerMenuSideBarItem
         {
-            get => field;
-            set
-            {
-                if (SetProperty(ref field, value))
-                {
-                    if (LastHamburgerMenuSideBarItemWithNotSubMenu != field &&
-                       (field.IsAddViewToRightTabContent || field.IsNavigationToRightTabContent))
-                    {
-                        LastHamburgerMenuSideBarItemWithNotSubMenu = field;
-                    }
-                }
-            }
+            get => field; 
+            set => SetProperty(ref field, value);
         }
 
         public bool IsPaneOpen
