@@ -86,7 +86,7 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
         {
             _eventAggregator.GetEvent<OnActiveTabHeaderItemEvent>().Subscribe(async (oathie) =>
             {
-                var currentTabInfo = oathie.SelectedTabInfo;
+                var currentTabHeaderedContentInfo = oathie.SelectedTabHeaderedContentInfo;
 
                 try
                 {
@@ -97,8 +97,8 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                     {
                         //var hamburgerMenuSideBarItemViewModel = AllLeafHamburgerMenuSideBarItems.FirstOrDefault(hmi => hmi.Name.Equals(currentTabInfo.Name, StringComparison.InvariantCultureIgnoreCase) ||
                         //                                                                                               hmi.Title.Equals(currentTabInfo.Title, StringComparison.InvariantCultureIgnoreCase));
-                        var matchHamburgerMenuSideBartem = AllLeafHamburgerMenuSideBarItems.FirstOrDefault(hmi => hmi.Name.Equals(currentTabInfo.Name, StringComparison.InvariantCultureIgnoreCase) ||
-                                                                                                                  hmi.Title.Equals(currentTabInfo.Title, StringComparison.InvariantCultureIgnoreCase));
+                        var matchHamburgerMenuSideBartem = AllLeafHamburgerMenuSideBarItems.FirstOrDefault(hmi => hmi.Name.Equals(currentTabHeaderedContentInfo.Name, StringComparison.InvariantCultureIgnoreCase) ||
+                                                                                                                  hmi.Title.Equals(currentTabHeaderedContentInfo.Title, StringComparison.InvariantCultureIgnoreCase));
 
                         if (matchHamburgerMenuSideBartem is not null)
                         {

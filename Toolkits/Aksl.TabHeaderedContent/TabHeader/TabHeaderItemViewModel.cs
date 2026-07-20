@@ -75,7 +75,7 @@ namespace Aksl.TabHeaderedContent.ViewModels
                 {
                     if (field)
                     {
-                        _eventAggregator.GetEvent<OnActiveTabHeaderItemEvent>().Publish(new() { SelectedTabInfo = _tabHeaderedContentInformation });
+                        _eventAggregator.GetEvent<OnActiveTabHeaderItemEvent>().Publish(new() { SelectedTabHeaderedContentInfo = _tabHeaderedContentInformation });
                     }
                 }
             }

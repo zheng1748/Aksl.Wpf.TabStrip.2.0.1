@@ -1,4 +1,5 @@
 ﻿using Aksl.Infrastructure;
+using Aksl.TabHeaderedContent;
 using Aksl.TabStrip;
 using Prism.Events;
 using Prism.Mvvm;
@@ -97,7 +98,7 @@ namespace Aksl.Modules.HamburgerMenuTreeSideBarTab.ViewModels
         #endregion
 
         #region Findt TreeSideBarItemViewModel Method
-        private TreeSideBarItemViewModel FindtTreeSideBarItemViewModel(TabInformation tabInformation)
+        private TreeSideBarItemViewModel FindtTreeSideBarItemViewModel(TabHeaderedContentInformation tabHeaderedContentInfo)
         {
             TreeSideBarItemViewModel findTreeSideBarItemViewModel = null;
 
@@ -115,7 +116,7 @@ namespace Aksl.Modules.HamburgerMenuTreeSideBarTab.ViewModels
 
             void RecursiveSubMenuItem(TreeSideBarItemViewModel curentTreeSideBarItemViewModel)
             {
-                if (IsEqualsNameOrTitle(curentTreeSideBarItemViewModel.Name, tabInformation.Name) || IsEqualsNameOrTitle(curentTreeSideBarItemViewModel.Title, tabInformation.Title))
+                if (IsEqualsNameOrTitle(curentTreeSideBarItemViewModel.Name, tabHeaderedContentInfo.Name) || IsEqualsNameOrTitle(curentTreeSideBarItemViewModel.Title, tabHeaderedContentInfo.Title))
                 {
                     findTreeSideBarItemViewModel = curentTreeSideBarItemViewModel;
                     return;
@@ -139,7 +140,7 @@ namespace Aksl.Modules.HamburgerMenuTreeSideBarTab.ViewModels
         {
             var dialogViewService = PrismUnityExtensions.GetDialogViewService();
 
-            _eventAggregator.GetEvent<OnSelectedTabItemEmptyEvent>().Subscribe(async (oatie) =>
+            _eventAggregator.GetEvent<OnSelectedTabHeaderItemEmptyEvent>().Subscribe(async (osthie) =>
             {
                 try
                 {
@@ -166,9 +167,9 @@ namespace Aksl.Modules.HamburgerMenuTreeSideBarTab.ViewModels
         {
             var dialogViewService = PrismUnityExtensions.GetDialogViewService();
 
-            _eventAggregator.GetEvent<OnActiveTabItemEvent>().Subscribe(async (oatie) =>
+            _eventAggregator.GetEvent<OnActiveTabHeaderItemEvent>().Subscribe(async (oathie) =>
             {
-                var currentTabInfo = oatie.SelectedTabInfo;
+                var currentTabHeaderedContentInfo = oathie.SelectedTabHeaderedContentInfo;
 
                 try
                 {
@@ -198,7 +199,7 @@ namespace Aksl.Modules.HamburgerMenuTreeSideBarTab.ViewModels
                         //}
                         #endregion
 
-                        var matchTreeSideBarItem = FindtTreeSideBarItemViewModel(currentTabInfo);
+                        var matchTreeSideBarItem = FindtTreeSideBarItemViewModel(currentTabHeaderedContentInfo);
 
                         var selectedTreeSideBarItem = GetSelectedTreeSideBarItemViewModel();
                         Debug.Assert(selectedTreeSideBarItem == SelectedTreeSideBarItem);

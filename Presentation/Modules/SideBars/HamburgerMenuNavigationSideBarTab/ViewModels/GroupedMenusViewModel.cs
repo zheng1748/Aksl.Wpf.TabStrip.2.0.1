@@ -224,7 +224,7 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
         {
             _eventAggregator.GetEvent<OnActiveTabHeaderItemEvent>().Subscribe(async (oathie) =>
             {
-                var currentTabInfo = oathie.SelectedTabInfo;
+                var currentTabHeaderedContentInfo = oathie.SelectedTabHeaderedContentInfo;
 
                 try
                 {
@@ -236,13 +236,13 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
                         var matchGroupedMenu = (from gm in GroupedMenus
                                                 let mc = gm.MenuContent
                                                 from mi in mc.MenuItems
-                                                where mi.Name.Equals(currentTabInfo.Name, StringComparison.InvariantCultureIgnoreCase) || mi.Title.Equals(currentTabInfo.Title, StringComparison.InvariantCultureIgnoreCase)
+                                                where mi.Name.Equals(currentTabHeaderedContentInfo.Name, StringComparison.InvariantCultureIgnoreCase) || mi.Title.Equals(currentTabHeaderedContentInfo.Title, StringComparison.InvariantCultureIgnoreCase)
                                                 select new { MenuContent = mc, MenuItemItem = mi }).FirstOrDefault();
 
                         var matchNoGroupedMenu = (from ngm in NoGroupedMenus
                                                   let ngmis = ngm.NoGroupedMenuItems
                                                   from ngmi in ngmis
-                                                  where ngmi.Name.Equals(currentTabInfo.Name, StringComparison.InvariantCultureIgnoreCase) || ngmi.Title.Equals(currentTabInfo.Title, StringComparison.InvariantCultureIgnoreCase)
+                                                  where ngmi.Name.Equals(currentTabHeaderedContentInfo.Name, StringComparison.InvariantCultureIgnoreCase) || ngmi.Title.Equals(currentTabHeaderedContentInfo.Title, StringComparison.InvariantCultureIgnoreCase)
                                                   select ngmi).FirstOrDefault();
 
                         SetSelectedGroupedMenuMenuItem();

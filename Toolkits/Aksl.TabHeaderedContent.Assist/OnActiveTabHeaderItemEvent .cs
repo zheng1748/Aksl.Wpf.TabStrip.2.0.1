@@ -13,7 +13,7 @@ namespace Aksl.TabHeaderedContent
         #endregion
 
         #region Properties
-        public TabHeaderedContentInformation SelectedTabInfo { get; set; }
+        public TabHeaderedContentInformation SelectedTabHeaderedContentInfo { get; set; }
         #endregion
     }
 }

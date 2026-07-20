@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Use Wpf TabHeaderedContent Assist.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2935cc3fee36310efa9aa5790bb24b5389e82dd2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36e16c8663865c1c8cffad79c28b9a4d20d9bcf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Wpf TabHeaderedContent Assist")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aksl.TabHeaderedContent.Assist")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

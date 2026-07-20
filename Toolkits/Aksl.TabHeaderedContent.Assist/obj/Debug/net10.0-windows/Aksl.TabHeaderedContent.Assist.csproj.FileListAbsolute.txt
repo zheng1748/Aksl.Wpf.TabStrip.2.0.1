@@ -28,3 +28,4 @@ C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Toolkits\Aksl.TabHeadere
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Toolkits\Aksl.TabHeaderedContent.Assist\obj\Debug\net10.0-windows\refint\Aksl.TabHeaderedContent.Assist.dll
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Toolkits\Aksl.TabHeaderedContent.Assist\obj\Debug\net10.0-windows\Aksl.TabHeaderedContent.Assist.pdb
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Toolkits\Aksl.TabHeaderedContent.Assist\obj\Debug\net10.0-windows\ref\Aksl.TabHeaderedContent.Assist.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Toolkits\Aksl.TabHeaderedContent.Assist\obj\Debug\net10.0-windows\Aksl.TabHeaderedContent.Assist.sourcelink.json
