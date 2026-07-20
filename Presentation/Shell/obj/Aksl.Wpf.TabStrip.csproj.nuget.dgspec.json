@@ -3930,6 +3930,12 @@
               "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.ActiveContents\\Aksl.ActiveContents.csproj": {
                 "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.ActiveContents\\Aksl.ActiveContents.csproj"
               },
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabHeaderedContent.Assist\\Aksl.TabHeaderedContent.Assist.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabHeaderedContent.Assist\\Aksl.TabHeaderedContent.Assist.csproj"
+              },
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabHeaderedContent\\Aksl.TabHeaderedContent.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabHeaderedContent\\Aksl.TabHeaderedContent.csproj"
+              },
               "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\Aksl.TabStrip.Assist.csproj": {
                 "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\Aksl.TabStrip.Assist.csproj"
               },
@@ -4748,6 +4754,12 @@
             "projectReferences": {
               "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj"
+              },
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabHeaderedContent.Assist\\Aksl.TabHeaderedContent.Assist.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabHeaderedContent.Assist\\Aksl.TabHeaderedContent.Assist.csproj"
+              },
+              "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabHeaderedContent\\Aksl.TabHeaderedContent.csproj": {
+                "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabHeaderedContent\\Aksl.TabHeaderedContent.csproj"
               },
               "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\Aksl.TabStrip.Assist.csproj": {
                 "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\Aksl.TabStrip.Assist.csproj"

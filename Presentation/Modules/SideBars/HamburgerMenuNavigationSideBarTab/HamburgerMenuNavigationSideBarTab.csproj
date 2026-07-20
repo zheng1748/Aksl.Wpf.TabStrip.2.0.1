@@ -29,6 +29,8 @@
 	<ItemGroup>
 		<ProjectReference Include="..\..\..\..\Infrastructure\Aksl.Infrastructure\Aksl.Infrastructure.csproj" />
 		<ProjectReference Include="..\..\..\..\Toolkits\Aksl.ActiveContents\Aksl.ActiveContents.csproj" />
+		<ProjectReference Include="..\..\..\..\Toolkits\Aksl.TabHeaderedContent.Assist\Aksl.TabHeaderedContent.Assist.csproj" />
+		<ProjectReference Include="..\..\..\..\Toolkits\Aksl.TabHeaderedContent\Aksl.TabHeaderedContent.csproj" />
 		<ProjectReference Include="..\..\..\..\Toolkits\Aksl.TabStrip.Assist\Aksl.TabStrip.Assist.csproj" />
 		<ProjectReference Include="..\..\..\..\Toolkits\Aksl.TabStrip\Aksl.TabStrip.csproj" />
 		<ProjectReference Include="..\..\..\..\Toolkits\Aksl.Toolkit.Controls\Aksl.Toolkit.Controls.csproj" />

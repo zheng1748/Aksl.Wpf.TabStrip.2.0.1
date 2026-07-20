@@ -1,19 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-
+﻿using Aksl.Dialogs.Services;
+using Aksl.Infrastructure;
+using Aksl.TabHeaderedContent;
 using Prism;
 using Prism.Events;
 using Prism.Ioc;
 using Prism.Mvvm;
 using Prism.Unity;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Unity;
-
-using Aksl.Dialogs.Services;
-using Aksl.Infrastructure;
 
 namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
 {
@@ -196,7 +195,7 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
         #region Register SelectedTabItem Empty Event
         private void RegisterOnSelectedTabItemEmptyEvent()
         {
-            _eventAggregator.GetEvent<Aksl.TabStrip.OnSelectedTabItemEmptyEvent>().Subscribe(async (ostee) =>
+            _eventAggregator.GetEvent<OnSelectedTabHeaderItemEmptyEvent>().Subscribe(async (osthie) =>
             {
                 try
                 {
@@ -223,9 +222,9 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
         #region Register Active TabItem Event
         private void RegisterActiveTabItemEvent()
         {
-            _eventAggregator.GetEvent<Aksl.TabStrip.OnActiveTabItemEvent>().Subscribe(async (oatie) =>
+            _eventAggregator.GetEvent<OnActiveTabHeaderItemEvent>().Subscribe(async (oathie) =>
             {
-                var currentTabInfo = oatie.SelectedTabInfo;
+                var currentTabInfo = oathie.SelectedTabInfo;
 
                 try
                 {

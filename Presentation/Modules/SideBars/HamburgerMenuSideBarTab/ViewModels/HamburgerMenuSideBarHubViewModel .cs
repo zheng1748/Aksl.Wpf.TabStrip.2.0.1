@@ -1,32 +1,17 @@
 ﻿using Aksl.ActiveContents.ViewModels;
-using Aksl.ActiveContents.Views;
 using Aksl.Dialogs.Services;
 using Aksl.Infrastructure;
 using Aksl.Infrastructure.Events;
-using Aksl.Modules.HamburgerMenuSideBarTab.Views;
 using Aksl.TabHeaderedContent.ViewModels;
-using Aksl.TabStrip.ViewModels;
-using Prism;
-using Prism.Commands;
 using Prism.Events;
 using Prism.Ioc;
-using Prism.Mvvm;
 using Prism.Regions;
 using Prism.Unity;
 using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
 using System.Linq;
-using System.Reflection;
-using System.Runtime.Intrinsics.X86;
 using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Xml.Linq;
 using Unity;
 
 namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
@@ -38,7 +23,6 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
         private readonly IEventAggregator _eventAggregator;
         private readonly IDialogViewService _dialogViewService;
         private readonly IMenuService _menuService;
-       // private string _workspaceViewEventName;
         #endregion
 
         #region Constructors
@@ -91,10 +75,6 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
             get => field;
             set => SetProperty<bool>(ref field, value);
         } = false;
-        #endregion
-
-        #region RegisterPropertyChanged Method
-      
         #endregion
 
         #region HamburgerMenu Properties

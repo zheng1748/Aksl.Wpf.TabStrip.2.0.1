@@ -1,21 +1,12 @@
 ﻿using Aksl.Dialogs.Services;
 using Aksl.Infrastructure;
 using Aksl.TabHeaderedContent;
-using Aksl.TabStrip;
-using Prism;
 using Prism.Events;
-using Prism.Ioc;
 using Prism.Mvvm;
-using Prism.Regions;
-using Prism.Unity;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using Unity;
 
 namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
 {

@@ -3,6 +3,7 @@ using Aksl.Dialogs.Services;
 using Aksl.Infrastructure;
 using Aksl.Infrastructure.Events;
 using Aksl.Mvvm;
+using Aksl.TabHeaderedContent.ViewModels;
 using Aksl.TabStrip.ViewModels;
 using Prism;
 using Prism.Commands;
@@ -56,7 +57,7 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
         #endregion
 
         #region Properties
-        public TabViewModel TabStripViewModel
+        public TabHeaderedContentViewModel TabHeaderedContentViewModel
         {
             get => field;
             set => SetProperty(ref field, value);
@@ -155,10 +156,10 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
             RegisterRightTabStrip();
             void RegisterRightTabStrip()
             {
-                _container.RegisterSingleton(from: typeof(TabViewModel), to: typeof(TabViewModel), name: ActiveContentNames.TabStripHamburgerMenuNavigationSideBar);
-                var tabStripViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabViewModel>(name: ActiveContentNames.TabStripHamburgerMenuNavigationSideBar);
+                _container.RegisterSingleton(from: typeof(TabHeaderedContentViewModel), to: typeof(TabHeaderedContentViewModel), name: ActiveContentNames.TabHeaderedContentHamburgerMenuNavigationSideBar);
+                var tabHeaderedContentViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabHeaderedContentViewModel>(name: ActiveContentNames.TabHeaderedContentHamburgerMenuNavigationSideBar);
 
-                TabStripViewModel = tabStripViewModel;
+                TabHeaderedContentViewModel = tabHeaderedContentViewModel;
             }
         }
         #endregion

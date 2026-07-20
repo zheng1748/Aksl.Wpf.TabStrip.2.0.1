@@ -8,10 +8,9 @@
              xmlns:a="clr-namespace:Aksl.Mvvm;assembly=Aksl.Toolkit"
              xmlns:sv="clr-namespace:Aksl.Mvvm;assembly=Aksl.Toolkit"
              xmlns:acview="clr-namespace:Aksl.ActiveContents.Views;assembly=Aksl.ActiveContents"
-             xmlns:tabStripViews="clr-namespace:Aksl.TabStrip.Views;assembly=Aksl.TabStrip"
+             xmlns:tabHeaderedContentViews="clr-namespace:Aksl.TabHeaderedContent.Views;assembly=Aksl.TabHeaderedContent"
              xmlns:views="clr-namespace:Aksl.Modules.HamburgerMenuNavigationSideBarTab.Views"
              mc:Ignorable="d"
-             x:Name="HamburgerMenuNavigationSideBarHuber"
              prism:ViewModelLocator.AutoWireViewModel="True">
     <UserControl.Resources>
 
@@ -543,7 +542,7 @@
                 <Grid x:Name="ContentRoot"
                       Grid.ColumnSpan="2">
                     <Border>
-                        <tabStripViews:TabView DataContext="{Binding Path=TabStripViewModel}" />
+                        <tabHeaderedContentViews:TabHeaderedContentView  DataContext="{Binding Path=TabHeaderedContentViewModel}" />
                     </Border>
                     <Rectangle x:Name="LightDismissLayer"
                                Fill="Transparent"

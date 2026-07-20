@@ -9,6 +9,8 @@
       "Aksl.Modules.HamburgerMenuTreeSideBarTab/1.0.0": {
         "dependencies": {
           "Aksl.Infrastructure": "1.0.0",
+          "Aksl.TabHeaderedContent": "1.0.0",
+          "Aksl.TabHeaderedContent.Assist": "1.0.0",
           "Aksl.TabStrip": "1.0.0",
           "Aksl.TabStrip.Assist": "1.0.0",
           "Aksl.Toolkit": "1.0.0",
@@ -497,6 +499,31 @@
           }
         }
       },
+      "Aksl.TabHeaderedContent/1.0.0": {
+        "dependencies": {
+          "Aksl.TabHeaderedContent.Assist": "1.0.0",
+          "Prism.Core": "1.0.0",
+          "Prism.Unity": "1.0.0",
+          "Prism.Wpf": "1.0.0"
+        },
+        "runtime": {
+          "Aksl.TabHeaderedContent.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Aksl.TabHeaderedContent.Assist/1.0.0": {
+        "dependencies": {
+          "Prism.Core": "1.0.0"
+        },
+        "runtime": {
+          "Aksl.TabHeaderedContent.Assist.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Aksl.TabStrip/1.0.0": {
         "dependencies": {
           "Aksl.TabStrip.Assist": "1.0.0",
@@ -849,6 +876,16 @@
       "sha512": ""
     },
     "Aksl.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aksl.TabHeaderedContent/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Aksl.TabHeaderedContent.Assist/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

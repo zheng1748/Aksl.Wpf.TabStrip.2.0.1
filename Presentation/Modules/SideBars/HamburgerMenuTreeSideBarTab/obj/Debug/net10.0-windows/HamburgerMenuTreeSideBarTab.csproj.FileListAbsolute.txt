@@ -88,3 +88,7 @@ C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\Sid
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\SideBars\HamburgerMenuTreeSideBarTab\obj\Debug\net10.0-windows\Aksl.Modules.HamburgerMenuTreeSideBarTab.pdb
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\SideBars\HamburgerMenuTreeSideBarTab\obj\Debug\net10.0-windows\ref\Aksl.Modules.HamburgerMenuTreeSideBarTab.dll
 C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\SideBars\HamburgerMenuTreeSideBarTab\obj\Debug\net10.0-windows\HamburgerMenuTreeSideBarTab.sourcelink.json
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\SideBars\HamburgerMenuTreeSideBarTab\bin\Debug\net10.0-windows\Aksl.TabHeaderedContent.Assist.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\SideBars\HamburgerMenuTreeSideBarTab\bin\Debug\net10.0-windows\Aksl.TabHeaderedContent.dll
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\SideBars\HamburgerMenuTreeSideBarTab\bin\Debug\net10.0-windows\Aksl.TabHeaderedContent.Assist.pdb
+C:\Users\zheng\Documents\GitHub\Aksl.Wpf.TabStrip.2.0.1\Presentation\Modules\SideBars\HamburgerMenuTreeSideBarTab\bin\Debug\net10.0-windows\Aksl.TabHeaderedContent.pdb

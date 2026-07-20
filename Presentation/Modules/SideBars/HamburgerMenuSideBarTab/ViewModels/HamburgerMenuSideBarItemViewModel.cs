@@ -1,30 +1,22 @@
-﻿using Aksl.ActiveContents;
-using Aksl.ActiveContents.ViewModels;
+﻿using Aksl.ActiveContents.ViewModels;
 using Aksl.Dialogs.Services;
 using Aksl.Infrastructure;
-using Aksl.Infrastructure.Events;
 using Aksl.TabHeaderedContent;
 using Aksl.TabHeaderedContent.ViewModels;
 using Aksl.TabStrip;
 using Aksl.TabStrip.ViewModels;
 using Aksl.TabStrip.Views;
 using Aksl.Toolkit.Controls;
-using Prism;
 using Prism.Common;
 using Prism.Events;
 using Prism.Ioc;
-using Prism.Mvvm;
 using Prism.Regions;
 using Prism.Unity;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Input;
-using System.Windows.Interop;
-using System.Xml.Linq;
 using Unity;
 
 namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
@@ -50,11 +42,11 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
 
         public HamburgerMenuSideBarItemViewModel(Aksl.Infrastructure.MenuItem menuItem, HamburgerMenuSideBarItemViewModel parent) : base(menuItem.Name, menuItem.Title, parent)
         {
+            _menuItem = menuItem;
+
             _eventAggregator = PrismUnityExtensions.GetEventAggregator();
             _dialogViewService = PrismUnityExtensions.GetDialogViewService();
             _menuService = PrismUnityExtensions.GetMenuService();
-
-            _menuItem = menuItem;
         }
         #endregion
 
@@ -177,7 +169,7 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
 
                     bool isSetFirst = false;
                     TabViewModel mainTabViewModel = default;
-                    var mainTabView = tabHeaderedContentViewModel.GetStoreTabContentViewElementByName(menuItem.Name) as TabView;
+                    var mainTabView = tabHeaderedContentViewModel.GetStoreViewElementByName(menuItem.Name) as TabView;
                     if (mainTabView is null)
                     {
                         mainTabViewModel = new();
@@ -233,10 +225,6 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                             }
                         }
                     }
-                    if (isSetFirst)
-                    {
-                        mainTabViewModel.SetFirstActiveTabItem();
-                    }
 
                     async Task InitializeMainTabViewCoreAsync()
                     {
@@ -247,16 +235,21 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                             if (subTabView is null)
                             {
                                 isSetFirst = true;
-                                CreateTopTabView(smi, mainTabViewModel);
+                                CreateSubTopTabView(smi, mainTabViewModel);
                                 await AddSubTabViewAsync(smi, mainTabViewModel);
                             }
                             else
                             {
-                                CreateTopTabView(smi, mainTabViewModel);
+                                CreateSubTopTabView(smi, mainTabViewModel);
                                 await AddSubTabViewAsync(smi, mainTabViewModel);
                             }
                         }
-                    }                }
+                    }
+                    if (isSetFirst)
+                    {
+                        mainTabViewModel.SetFirstActiveTabItem();
+                    }
+                }
                 //else if (_menuItem.HasViewName())
                 //{
                 //    AddViewToTabContent(_menuItem, tabHeaderedContentViewModel);
@@ -281,7 +274,7 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                 ViewName = menuItem.ViewName
             };
 
-            var currentView = tabHeaderedContentViewModel.GetStoreTabContentViewElementByName(menuItem.Name);
+            var currentView = tabHeaderedContentViewModel.GetStoreViewElementByName(menuItem.Name);
             if (currentView is not null)
             {
                 if (menuItem.IsCacheable)
@@ -489,7 +482,7 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                     ViewName = menuItem.ViewName
                 };
 
-                var currentView = tabHeaderedContentViewModel.GetStoreTabContentViewElementByName(menuItem.Name);
+                var currentView = tabHeaderedContentViewModel.GetStoreViewElementByName(menuItem.Name);
                 if (currentView is not null)
                 {
                     if (menuItem.IsCacheable)
@@ -530,7 +523,7 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
 
                 TabHeaderedContentInformation tabHeaderedContentInfo = CreateTabInformation(menuItem.Name, menuItem.Title, menuItem.ViewName, new() { { "CurrentMenuItem", _menuItem } });
 
-                var currentView = tabHeaderedContentViewModel.GetStoreTabContentViewElementByName(menuItem.Name);
+                var currentView = tabHeaderedContentViewModel.GetStoreViewElementByName(menuItem.Name);
                 if (currentView is not null)
                 {
                     if (menuItem.IsCacheable)
@@ -556,7 +549,6 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                 await _dialogViewService.AlertAsync(message: $"{ex.Message}", title: $"Error:Add Tab View");
             }
         }
-
 
         #region Create TabHeaderedContentInformation Method
         public TabHeaderedContentInformation CreateTabInformation(string name, string title, string viewTypeAssemblyQualifiedName, NavigationParameters navigationParameters)

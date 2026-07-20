@@ -603,6 +603,8 @@
         "dependencies": {
           "Aksl.ActiveContents": "1.0.0",
           "Aksl.Infrastructure": "1.0.0",
+          "Aksl.TabHeaderedContent": "1.0.0",
+          "Aksl.TabHeaderedContent.Assist": "1.0.0",
           "Aksl.TabStrip": "1.0.0",
           "Aksl.TabStrip.Assist": "1.0.0",
           "Aksl.Toolkit": "1.0.0",
@@ -649,6 +651,8 @@
       "Aksl.Modules.HamburgerMenuTreeSideBarTab/1.0.0": {
         "dependencies": {
           "Aksl.Infrastructure": "1.0.0",
+          "Aksl.TabHeaderedContent": "1.0.0",
+          "Aksl.TabHeaderedContent.Assist": "1.0.0",
           "Aksl.TabStrip": "1.0.0",
           "Aksl.TabStrip.Assist": "1.0.0",
           "Aksl.Toolkit": "1.0.0",

@@ -115,7 +115,7 @@ namespace Aksl.TabHeaderedContent.ViewModels
             return viewElement;
         }
 
-        public System.Windows.DependencyObject? GetStoreTabContentViewElementByName(string name)
+        public System.Windows.DependencyObject? GetStoreViewElementByName(string name)
         {
             var viewElement = TabContentViewModel.GetStoreViewElementByName(name);
 

@@ -83,8 +83,8 @@ namespace Aksl.Modules.Shell.ViewModels
                     //var hamburgerMenuSideBarHubView = ShellContentActiveContentViewModel.GetStoreViewElementByName("HamburgerMenuSideBarHubView") as HamburgerMenuSideBarHubView;
                     //var hamburgerMenuSideBarHubViewModel = hamburgerMenuSideBarHubView.DataContext as HamburgerMenuSideBarHubViewModel;
 
-                    ShellContentActiveContentViewModel.SetActiveContentItemByName("HamburgerMenuSideBarHubView");
-                   // ShellContentActiveContentViewModel.SetActiveContentItemByName("HamburgerMenuNavigationSideBarHubView");
+                   // ShellContentActiveContentViewModel.SetActiveContentItemByName("HamburgerMenuSideBarHubView");
+                   ShellContentActiveContentViewModel.SetActiveContentItemByName("HamburgerMenuNavigationSideBarHubView");
                   //ShellContentActiveContentViewModel.SetActiveContentItemByName("HamburgerMenuTreeSideBarHubView");
                 }
                 else

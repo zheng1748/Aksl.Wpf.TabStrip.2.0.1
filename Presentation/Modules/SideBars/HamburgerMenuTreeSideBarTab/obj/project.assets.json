@@ -738,6 +738,41 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
+      "Aksl.TabHeaderedContent/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Aksl.TabHeaderedContent.Assist": "1.0.0",
+          "Prism.Core": "1.0.0",
+          "Prism.Unity": "1.0.0",
+          "Prism.Wpf": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Aksl.TabHeaderedContent.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aksl.TabHeaderedContent.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "Aksl.TabHeaderedContent.Assist/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Prism.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Aksl.TabHeaderedContent.Assist.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Aksl.TabHeaderedContent.Assist.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Aksl.TabStrip/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -1946,6 +1981,16 @@
       "path": "../../../../Infrastructure/Aksl.Infrastructure/Aksl.Infrastructure.csproj",
       "msbuildProject": "../../../../Infrastructure/Aksl.Infrastructure/Aksl.Infrastructure.csproj"
     },
+    "Aksl.TabHeaderedContent/1.0.0": {
+      "type": "project",
+      "path": "../../../../Toolkits/Aksl.TabHeaderedContent/Aksl.TabHeaderedContent.csproj",
+      "msbuildProject": "../../../../Toolkits/Aksl.TabHeaderedContent/Aksl.TabHeaderedContent.csproj"
+    },
+    "Aksl.TabHeaderedContent.Assist/1.0.0": {
+      "type": "project",
+      "path": "../../../../Toolkits/Aksl.TabHeaderedContent.Assist/Aksl.TabHeaderedContent.Assist.csproj",
+      "msbuildProject": "../../../../Toolkits/Aksl.TabHeaderedContent.Assist/Aksl.TabHeaderedContent.Assist.csproj"
+    },
     "Aksl.TabStrip/1.0.0": {
       "type": "project",
       "path": "../../../../Toolkits/Aksl.TabStrip/Aksl.TabStrip.csproj",
@@ -1985,6 +2030,8 @@
   "projectFileDependencyGroups": {
     "net10.0-windows7.0": [
       "Aksl.Infrastructure >= 1.0.0",
+      "Aksl.TabHeaderedContent >= 1.0.0",
+      "Aksl.TabHeaderedContent.Assist >= 1.0.0",
       "Aksl.TabStrip >= 1.0.0",
       "Aksl.TabStrip.Assist >= 1.0.0",
       "Aksl.Toolkit >= 1.0.0",
@@ -2031,6 +2078,12 @@
           "projectReferences": {
             "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Infrastructure\\Aksl.Infrastructure\\Aksl.Infrastructure.csproj"
+            },
+            "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabHeaderedContent.Assist\\Aksl.TabHeaderedContent.Assist.csproj": {
+              "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabHeaderedContent.Assist\\Aksl.TabHeaderedContent.Assist.csproj"
+            },
+            "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabHeaderedContent\\Aksl.TabHeaderedContent.csproj": {
+              "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabHeaderedContent\\Aksl.TabHeaderedContent.csproj"
             },
             "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\Aksl.TabStrip.Assist.csproj": {
               "projectPath": "C:\\Users\\zheng\\Documents\\GitHub\\Aksl.Wpf.TabStrip.2.0.1\\Toolkits\\Aksl.TabStrip.Assist\\Aksl.TabStrip.Assist.csproj"

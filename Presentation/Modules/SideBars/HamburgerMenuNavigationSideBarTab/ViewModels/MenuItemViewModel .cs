@@ -2,11 +2,14 @@
 using Aksl.Dialogs.Services;
 using Aksl.Infrastructure;
 using Aksl.Infrastructure.Events;
+using Aksl.TabHeaderedContent;
+using Aksl.TabHeaderedContent.ViewModels;
 using Aksl.TabStrip;
 using Aksl.TabStrip.ViewModels;
 using Aksl.TabStrip.Views;
 using Aksl.Toolkit.Controls;
 using Prism;
+using Prism.Common;
 using Prism.Events;
 using Prism.Ioc;
 using Prism.Mvvm;
@@ -28,41 +31,41 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
     {
         #region Members
         protected readonly IEventAggregator _eventAggregator;
-        private readonly MenuItem _menuItem;
+        private readonly IDialogViewService _dialogViewService;
+        private readonly Aksl.Infrastructure.MenuItem _menuItem;
         #endregion
 
         #region Constructors
         public MenuItemViewModel(int groupIndex, int index, MenuItem menuItem)
         {
-            _eventAggregator = PrismUnityExtensions.GetEventAggregator();
             GroupIndex = groupIndex;
             Index = index;
             _menuItem = menuItem;
-           // RegisterHamburgerMenuBarPaneOpenEvent();
+
+            _eventAggregator = PrismUnityExtensions.GetEventAggregator();
+            _dialogViewService = PrismUnityExtensions.GetDialogViewService();
+
+            // RegisterHamburgerMenuBarPaneOpenEvent();
         }
 
         public MenuItemViewModel() : base()
         {
-            _eventAggregator = PrismUnityExtensions.GetEventAggregator();
-
             _menuItem = null;
-            //Parent = null;
 
-            //_children = new();
+            _eventAggregator = PrismUnityExtensions.GetEventAggregator();
+            _dialogViewService = PrismUnityExtensions.GetDialogViewService();
+
             //RegisterHamburgerMenuBarPaneOpenEvent();
         }
 
         public MenuItemViewModel(MenuItem menuItem, MenuItemViewModel parent) : base(menuItem.Name, menuItem.Title, parent)
         {
-            _eventAggregator = PrismUnityExtensions.GetEventAggregator();
-
             _menuItem = menuItem;
 
-            //Parent = parent;
-            //Parent?.Children.Add(this);
+            _eventAggregator = PrismUnityExtensions.GetEventAggregator();
+            _dialogViewService = PrismUnityExtensions.GetDialogViewService();
 
-            //_children = new();
-           // RegisterHamburgerMenuBarPaneOpenEvent();
+            // RegisterHamburgerMenuBarPaneOpenEvent();
         }
         #endregion
 
@@ -83,10 +86,14 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
         private bool IsNextNavigation => _menuItem.IsNextNavigation;
         private bool HasNavigationName => !string.IsNullOrEmpty(_menuItem.NavigationName);
         private bool IsNexOnNotLeaf => _menuItem.IsNexOnNotLeaf;
-        public bool IsNavigationToRightContent =>
-                          IsLeaf && _menuItem.HasNextSubMenu() && _menuItem.HasViewName() && _menuItem.IsNexApplication;
-        public bool IsAddViewToRightContent =>
-                          IsLeaf && !_menuItem.HasNextSubMenu() && _menuItem.HasViewName() && !_menuItem.IsNexApplication;
+        public bool HasSubMenu =>
+                   _menuItem.HasNextSubMenu();
+        public bool IsNavigationToRightTabContent =>
+                              IsLeaf && _menuItem.HasNextSubMenu() && _menuItem.HasViewName() && _menuItem.IsNexApplication;
+        public bool IsAddViewsToRightTabContent =>
+                             IsLeaf && _menuItem.HasNextSubMenu() && !_menuItem.HasViewName() && !_menuItem.IsNexApplication;
+        public bool IsAddViewToRightTabContent =>
+                             IsLeaf && !_menuItem.HasNextSubMenu() && _menuItem.HasViewName() && !_menuItem.IsNexApplication;
 
         public bool IsSelected
         {
@@ -95,10 +102,25 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
             {
                 if (SetProperty<bool>(ref field, value))
                 {
-                    if (field && IsLeaf)
+                    //if (field && IsLeaf)
+                    //{
+                    //   //AddViewToRightTabContent().Await();
+                    //    AddViewToRightTabContentCore().Await();
+                    //}
+
+                    if (field && IsAddViewToRightTabContent)
                     {
-                       //AddViewToRightTabContent().Await();
-                        AddViewToRightTabContentCore().Await();
+                        AddViewToRightTabContentAsync(_menuItem).Await();
+                    }
+
+                    if (field && IsAddViewsToRightTabContent)
+                    {
+                        AddViewsToRightTabContentAsync(_menuItem).Await();
+                    }
+
+                    if (field && IsNavigationToRightTabContent)
+                    {
+                        NavigationToRightTabContentAsync(_menuItem).Await();
                     }
                 }
             }
@@ -120,30 +142,114 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
         }
         #endregion
 
-        #region Add View To RightTab Method
-        private async Task AddViewToRightTabContentCore()
+        #region Add View To Right TabContent Method
+        private async Task AddViewToRightTabContentAsync(MenuItem menuItem)
+        {
+            try
+            {
+                var tabHeaderedContentViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabHeaderedContentViewModel>(name: ActiveContentNames.TabHeaderedContentHamburgerMenuNavigationSideBar);
+                if (tabHeaderedContentViewModel.IsActiveTabItemByName(_menuItem.Name))
+                {
+                    return;
+                }
+
+                var viewTypeName = menuItem.GetViewTypeName();
+
+                TabHeaderedContentInformation tabHeaderedContentInfo = new()
+                {
+                    Name = menuItem.Name,
+                    Title = menuItem.Title,
+                    IconKind = menuItem.IconKind,
+                    ViewName = menuItem.ViewName
+                };
+
+                var currentView = tabHeaderedContentViewModel.GetStoreViewElementByName(menuItem.Name);
+                if (currentView is not null)
+                {
+                    if (menuItem.IsCacheable)
+                    {
+                        tabHeaderedContentViewModel.SetTabItem(tabHeaderedContentInfo);
+                    }
+                    else
+                    {
+                        tabHeaderedContentViewModel.RetsetTabItem(tabHeaderedContentInfo);
+                    }
+                }
+                else
+                {
+                    tabHeaderedContentViewModel.Add(tabHeaderedContentInfo);
+                }
+            }
+            catch (Exception ex)
+            {
+                string msg = !string.IsNullOrEmpty(ex.InnerException?.Message) ? ex.InnerException.Message : ex.Message;
+
+                await _dialogViewService.AlertAsync(message: $"Unable to find \"{msg}\".", title: $"Error:Missing Type");
+            }
+        }
+        #endregion
+
+        #region Add Views To Right TabContent Method
+        public async Task AddViewsToRightTabContentAsync(MenuItem menuItem)
         {
             var dialogViewService = PrismUnityExtensions.GetDialogViewService();
 
             try
             {
-                var topTabViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabViewModel>(name: ActiveContentNames.TabStripHamburgerMenuNavigationSideBar);
-                if (topTabViewModel is not null)
+                var tabHeaderedContentViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabHeaderedContentViewModel>(name: ActiveContentNames.TabHeaderedContentHamburgerMenuNavigationSideBar);
+                if (tabHeaderedContentViewModel.IsActiveTabItemByName(_menuItem.Name))
                 {
-                    if (topTabViewModel.IsActiveTabItemByName(_menuItem.Name))
+                    return;
+                }
+
+                if (menuItem.HasNextSubMenu())
+                {
+                    bool isSetFirst = false;
+                    TabViewModel mainTabViewModel = default;
+                    var mainTabView = tabHeaderedContentViewModel.GetStoreViewElementByName(menuItem.Name) as TabView;
+                    if (mainTabView is null)
                     {
-                        return;
+                        mainTabViewModel = new();
+                        mainTabView = new()
+                        {
+                            DataContext = mainTabViewModel
+                        };
+
+                        CreateTopTabHeaderedContent(menuItem, tabHeaderedContentViewModel);
+                        var tabContentItemViewModel = tabHeaderedContentViewModel.GetStoreTabContentItemByName(menuItem.Name);
+                        tabContentItemViewModel.ViewElement = mainTabView;
+
+                        await InitializeMainTabViewCoreAsync();
+                    }
+                    else
+                    {
+                        mainTabViewModel = mainTabView.DataContext as TabViewModel;
+                        CreateTopTabHeaderedContent(menuItem, tabHeaderedContentViewModel);
+                        await InitializeMainTabViewCoreAsync();
                     }
 
-                    if (_menuItem.HasNextSubMenu())
+                    async Task InitializeMainTabViewCoreAsync()
                     {
-                        TabStripManager.Instance.CreateTopTabView(_menuItem, topTabViewModel);
-
-                        await TabStripManager.Instance.AddSubTabViewAsync(_menuItem, topTabViewModel);
+                        IEnumerable<Aksl.Infrastructure.MenuItem> subMenus = await menuItem.GetNextSubMenuAsync();
+                        foreach (var smi in subMenus)
+                        {
+                            var subTabView = mainTabViewModel.GetStoreViewElementByName(smi.Name) as TabView;
+                            if (subTabView is null)
+                            {
+                                isSetFirst = true;
+                                CreateSubTopTabView(smi, mainTabViewModel);
+                                await AddSubTabViewAsync(smi, mainTabViewModel);
+                            }
+                            else
+                            {
+                                CreateSubTopTabView(smi, mainTabViewModel);
+                                await AddSubTabViewAsync(smi, mainTabViewModel);
+                            }
+                        }
                     }
-                    else if (_menuItem.HasViewName())
+                    if (isSetFirst)
                     {
-                        TabStripManager.Instance.AddViewToTabContent(_menuItem, topTabViewModel);
+                        mainTabViewModel.SetFirstActiveTabItem();
                     }
                 }
             }
@@ -156,97 +262,31 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
                 await dialogViewService.AlertAsync(message: $"{ex.Message}", title: $"Error:Add Ta View");
             }
         }
-        #endregion
 
-        #region Add View To RightTab Method
-        public async Task AddViewToRightTabContent()
+        private void CreateTopTabHeaderedContent(MenuItem menuItem, TabHeaderedContentViewModel tabHeaderedContentViewModel)
         {
-            var topTabViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabViewModel>(name: ActiveContentNames.TabStripHamburgerMenuNavigationSideBar);
-
-            if (topTabViewModel.IsActiveTabItemByName(_menuItem.Name))
-            {
-                return;
-            }
-
-            if (_menuItem.HasNextSubMenu())
-            {
-                CreateTopTabView(_menuItem, topTabViewModel);
-
-                await AddSubTabViewAsync(_menuItem, topTabViewModel);
-            }
-            else if (_menuItem.HasViewName())
-            {
-                AddViewToTabContent(_menuItem, topTabViewModel);
-            }
-        }
-
-        private void AddViewToTabContent(MenuItem menuItem, TabViewModel topTabViewModel)
-        {
-            var dialogViewService = PrismUnityExtensions.GetDialogViewService();
-
-            try
-            {
-                var viewTypeName = menuItem.GetViewTypeName();
-
-                TabInformation tabInfo = new()
-                {
-                    Name = menuItem.Name,
-                    Title = menuItem.Title,
-                    IconKind = menuItem.IconKind,
-                    ViewName = menuItem.ViewName
-                };
-
-                var currentView = topTabViewModel.GetStoreViewElementByName(menuItem.Name);
-                if (currentView is not null)
-                {
-                    if (menuItem.IsCacheable)
-                    {
-                        topTabViewModel.SetTabItem(tabInfo);
-                    }
-                    else
-                    {
-                        topTabViewModel.RetsetTabItem(tabInfo);
-                    }
-                }
-                else
-                {
-                    topTabViewModel.Add(tabInfo);
-                }
-            }
-            catch (Exception ex)when(string.IsNullOrEmpty(ex.InnerException?.Message))
-            {
-                string msg = !string.IsNullOrEmpty(ex.InnerException?.Message) ? ex.InnerException.Message : ex.Message;
-
-                dialogViewService.AlertAsync(message: $"Unable to find \"{msg}\".", title: $"Error:Missing Type").Await();
-            }
-        }
-
-        private void CreateTopTabView(MenuItem menuItem, TabViewModel tabViewModel)
-        {
-            TabInformation topTabInfo = new()
+            TabHeaderedContentInformation tabHeaderedContentInfo = new()
             {
                 Name = menuItem.Name,
                 Title = menuItem.Title,
-                IconKind = menuItem.IconKind,
-                ViewName = menuItem.ViewName,
-                CloseTabButtonVisibility = Visibility.Visible
+                ViewName = menuItem.ViewName
             };
 
-            var currentView = tabViewModel.GetStoreViewElementByName(menuItem.Name);
+            var currentView = tabHeaderedContentViewModel.GetStoreViewElementByName(menuItem.Name);
             if (currentView is not null)
             {
                 if (menuItem.IsCacheable)
                 {
-                    tabViewModel.SetActiveTabItemByName(menuItem.Name);
+                    tabHeaderedContentViewModel.SetTabItem(tabHeaderedContentInfo);
                 }
                 else
                 {
-                    tabViewModel.RetsetTabItem(topTabInfo);
+                    tabHeaderedContentViewModel.RetsetTabItem(tabHeaderedContentInfo);
                 }
             }
             else
             {
-                tabViewModel.Add(topTabInfo);
+                tabHeaderedContentViewModel.Add(tabHeaderedContentInfo);
             }
         }
 
@@ -286,8 +326,8 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
             {
                 var topTabItemViewModel = currentTabViewModel.GetStoreTabItemViewModelByName(currentMenuItem.Name);
 
-                IEnumerable<MenuItem> nextSubMenu = await currentMenuItem.GetNextSubMenuAsync();
-                if (nextSubMenu is not null && nextSubMenu.Any())
+                IEnumerable<MenuItem> nextSubMenus = await currentMenuItem.GetNextSubMenuAsync();
+                if (nextSubMenus is not null && nextSubMenus.Any())
                 {
                     TabViewModel subTabViewModel = new();
                     var subTabView = await FindTabViewByNameAsync(topTabViewModel, currentMenuItem.Name);
@@ -308,7 +348,7 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
 
                     bool isSetFirst = false;
 
-                    foreach (var smi in nextSubMenu)
+                    foreach (var smi in nextSubMenus)
                     {
                         var leafMenuItems = await smi.GetLeafMenuItems();
                         var isCurrent = leafMenuItems.IsCurrent(smi);
@@ -386,6 +426,90 @@ namespace Aksl.Modules.HamburgerMenuNavigationSideBarTab.ViewModels
 
             return findTabView;
         }
+        #endregion
+
+        #region Navigation To RightTabContent Method
+        public async Task NavigationToRightTabContentAsync(MenuItem menuItem)
+        {
+            try
+            {
+                var tabHeaderedContentViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabHeaderedContentViewModel>(name: ActiveContentNames.TabHeaderedContentHamburgerMenuNavigationSideBar);
+                if (tabHeaderedContentViewModel.IsActiveTabItemByName(_menuItem.Name))
+                {
+                    return;
+                }
+
+                var viewTypeName = menuItem.GetViewTypeName();
+
+                TabHeaderedContentInformation tabHeaderedContentInfo = CreateTabInformation(menuItem.Name, menuItem.Title, menuItem.ViewName, new() { { "CurrentMenuItem", _menuItem } });
+
+                var currentView = tabHeaderedContentViewModel.GetStoreViewElementByName(menuItem.Name);
+                if (currentView is not null)
+                {
+                    if (menuItem.IsCacheable)
+                    {
+                        tabHeaderedContentViewModel.SetTabItem(tabHeaderedContentInfo);
+                    }
+                    else
+                    {
+                        tabHeaderedContentViewModel.RetsetTabItem(tabHeaderedContentInfo);
+                    }
+                }
+                else
+                {
+                    tabHeaderedContentViewModel.Add(tabHeaderedContentInfo);
+                }
+            }
+            catch (Exception ex) when (!string.IsNullOrEmpty(ex.InnerException?.Message))
+            {
+                await _dialogViewService.AlertAsync(message: $"{ex.InnerException.Message}", title: $"Error:Add Tab View");
+            }
+            catch (Exception ex)
+            {
+                await _dialogViewService.AlertAsync(message: $"{ex.Message}", title: $"Error:Add Tab View");
+            }
+        }
+
+        #region Create TabHeaderedContentInformation Method
+        public TabHeaderedContentInformation CreateTabInformation(string name, string title, string viewTypeAssemblyQualifiedName, NavigationParameters navigationParameters)
+        {
+            Type viewType = Type.GetType(viewTypeAssemblyQualifiedName);
+            if (viewType is null)
+            {
+                throw new ArgumentException($"Missing Type {viewTypeAssemblyQualifiedName}");
+            }
+            var viewName = viewType.Name;
+
+            var unityContainer = PrismIocExtensions.GetUnityContainer();
+            var regionNavigationService = unityContainer.Resolve<IRegionNavigationService>();
+
+            TabHeaderedContentInformation tabHeaderedContentInfo = new()
+            {
+                Name = name,
+                Title = title,
+                ViewName = viewTypeAssemblyQualifiedName
+            };
+
+            var registeredView = unityContainer.Resolve<object>(viewName);
+            if (registeredView is FrameworkElement frameworkElement)
+            {
+                MvvmHelpers.AutowireViewModel(registeredView);
+
+                NavigationContext navigationContext = new(regionNavigationService, new Uri(viewName, UriKind.RelativeOrAbsolute))
+                {
+                    Parameters = navigationParameters
+                };
+
+                Action<INavigationAware> action = (n) => n.OnNavigatedTo(navigationContext);
+                MvvmHelpers.ViewAndViewModelAction<INavigationAware>(registeredView, action);
+
+                tabHeaderedContentInfo.ViewName = null;
+                tabHeaderedContentInfo.ViewElement = frameworkElement;
+            }
+
+            return tabHeaderedContentInfo;
+        }
+        #endregion
         #endregion
     }
 }

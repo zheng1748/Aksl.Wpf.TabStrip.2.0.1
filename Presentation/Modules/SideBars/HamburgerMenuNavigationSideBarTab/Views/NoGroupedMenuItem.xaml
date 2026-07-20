@@ -151,7 +151,7 @@
         <materialDesign:PackIcon Grid.Column="2"
                                  Width="24"
                                  Height="24"
-                                 Visibility="{Binding Path=IsAddViewToRightContent,Converter={StaticResource booleanNegationToVisibilityConverter}}"
+                                 Visibility="{Binding Path=HasSubMenu,Converter={StaticResource booleanToVisibilityConverter}}"
                                  Kind="ArrowRightThick"
                                  Foreground="Black"
                                  Background="Transparent"
