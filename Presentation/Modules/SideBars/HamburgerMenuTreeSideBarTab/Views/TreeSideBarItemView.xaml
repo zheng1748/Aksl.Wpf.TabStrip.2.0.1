@@ -28,14 +28,14 @@
                                    TextTrimming="CharacterEllipsis"
                                    TextWrapping="NoWrap">
                         </TextBlock>
-                        <materialDesign:PackIcon  DockPanel.Dock="Right"
-                                                  Width="24"
-                                                  Height="24"
-                                                  Visibility="{Binding Path=IsShowArrow,Converter={StaticResource booleanToVisibilityConverter}}"
-                                                  Kind="ArrowRightThick"
-                                                  HorizontalAlignment="Right"
-                                                  VerticalAlignment="Center"
-                                                  Margin="60,1,1,1" />
+                        <materialDesign:PackIcon DockPanel.Dock="Right"
+                                                 Width="24"
+                                                 Height="24"
+                                                 Visibility="{Binding Path=IsShowArrow,Converter={StaticResource booleanToVisibilityConverter}}"
+                                                 Kind="ArrowRightThin"
+                                                 HorizontalAlignment="Right"
+                                                 VerticalAlignment="Center"
+                                                 Margin="60,1,1,1" />
                     </DockPanel>
                     <!--<Grid>
                         <Grid.RowDefinitions>
@@ -86,7 +86,7 @@
     </UserControl.Resources>
 
     <!--<StackPanel Orientation="Horizontal">-->
-        <Grid>
+    <Grid>
         <Label x:Name="treeBarItemLabel"
                Style="{StaticResource labelStyle}">
             <ei:Interaction.Triggers>
@@ -123,7 +123,7 @@
                                              Value="Bold" />
                 </ei:DataTrigger>
             </ei:Interaction.Triggers>
-            </Label>
-        </Grid>
+        </Label>
+    </Grid>
     <!--</StackPanel>-->
 </UserControl>

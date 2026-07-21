@@ -60,6 +60,8 @@ namespace Aksl.Modules.HamburgerMenuSideBarTab.ViewModels
                            _menuItem.HasNextSubMenu();
         public bool HasViewName =>
                            _menuItem.HasViewName();
+        public bool IsShowArrow =>
+          IsNavigationToRightTabContent || IsAddViewsToRightTabContent;
         public bool IsSetLeftPaneActiveContentItem =>
                             _menuItem.HasNextSubMenu() && !_menuItem.HasViewName() && !_menuItem.IsNexApplication;
         public bool IsNavigationToRightTabContent =>
