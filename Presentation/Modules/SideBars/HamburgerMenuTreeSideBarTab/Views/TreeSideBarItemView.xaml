@@ -21,7 +21,7 @@
                                                  Background="Transparent"
                                                  HorizontalAlignment="Center"
                                                  VerticalAlignment="Center" />
-                        <TextBlock 
+                        <TextBlock Width="150"
                                    Text="{Binding Path=Title,Mode=OneWay}"
                                    Margin="10,0,0,0"
                                    VerticalAlignment="Center"
@@ -31,7 +31,7 @@
                         <materialDesign:PackIcon  DockPanel.Dock="Right"
                                                   Width="24"
                                                   Height="24"
-                                                  Visibility="{Binding Path=IsNavigationToRightContent,Converter={StaticResource booleanToVisibilityConverter}}"
+                                                  Visibility="{Binding Path=IsShowArrow,Converter={StaticResource booleanToVisibilityConverter}}"
                                                   Kind="ArrowRightThick"
                                                   HorizontalAlignment="Right"
                                                   VerticalAlignment="Center"

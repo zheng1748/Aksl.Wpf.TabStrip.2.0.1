@@ -8,7 +8,7 @@
              xmlns:a="clr-namespace:Aksl.Mvvm;assembly=Aksl.Toolkit"
              xmlns:sv="clr-namespace:Aksl.Mvvm;assembly=Aksl.Toolkit"
              xmlns:acview="clr-namespace:Aksl.ActiveContents.Views;assembly=Aksl.ActiveContents"
-             xmlns:tabStripViews="clr-namespace:Aksl.TabStrip.Views;assembly=Aksl.TabStrip"
+             xmlns:tabHeaderedContentViews="clr-namespace:Aksl.TabHeaderedContent.Views;assembly=Aksl.TabHeaderedContent"
              xmlns:views="clr-namespace:Aksl.Modules.HamburgerMenuTreeSideBarTab.Views"
              mc:Ignorable="d"
              x:Name="HamburgerMenuTreeSideBarContainer"
@@ -547,7 +547,7 @@
                 <Grid x:Name="ContentRoot"
                       Grid.ColumnSpan="2">
                     <Border>
-                        <tabStripViews:TabView DataContext="{Binding Path=TabStripViewModel}" />
+                        <tabHeaderedContentViews:TabHeaderedContentView  DataContext="{Binding Path=TabHeaderedContentViewModel}" />
                     </Border>
                     <Rectangle x:Name="LightDismissLayer"
                                Fill="Transparent"

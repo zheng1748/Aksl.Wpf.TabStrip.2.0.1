@@ -73,8 +73,10 @@ namespace Aksl.Modules.HamburgerMenuTreeSideBarTab.ViewModels
         public MenuItem MenuItem => _menuItem;
         public bool HasSubMenu =>
                 _menuItem.HasNextSubMenu();
+        public bool IsShowArrow =>
+              IsNavigationToRightTabContent || IsAddViewsToRightTabContent;
         public bool IsNavigationToRightTabContent =>
-                            IsLeaf && _menuItem.HasNextSubMenu() && _menuItem.HasViewName() && _menuItem.IsNexApplication;
+                              IsLeaf && _menuItem.HasNextSubMenu() && _menuItem.HasViewName() && _menuItem.IsNexApplication;
         public bool IsAddViewsToRightTabContent =>
                              IsLeaf && _menuItem.HasNextSubMenu() && !_menuItem.HasViewName() && !_menuItem.IsNexApplication;
         public bool IsAddViewToRightTabContent =>
@@ -153,7 +155,7 @@ namespace Aksl.Modules.HamburgerMenuTreeSideBarTab.ViewModels
         {
             try
             {
-                var tabHeaderedContentViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabHeaderedContentViewModel>(name: ActiveContentNames.TabHeaderedContentHamburgerMenuSideBar);
+                var tabHeaderedContentViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabHeaderedContentViewModel>(name: ActiveContentNames.TabHeaderedContentHamburgerMenuTreeSideBarRightTabContent);
                 if (tabHeaderedContentViewModel.IsActiveTabItemByName(_menuItem.Name))
                 {
                     return;
@@ -202,7 +204,7 @@ namespace Aksl.Modules.HamburgerMenuTreeSideBarTab.ViewModels
 
             try
             {
-                var tabHeaderedContentViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabHeaderedContentViewModel>(name: ActiveContentNames.TabHeaderedContentHamburgerMenuSideBar);
+                var tabHeaderedContentViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabHeaderedContentViewModel>(name: ActiveContentNames.TabHeaderedContentHamburgerMenuTreeSideBarRightTabContent);
                 if (tabHeaderedContentViewModel.IsActiveTabItemByName(_menuItem.Name))
                 {
                     return;
@@ -439,7 +441,7 @@ namespace Aksl.Modules.HamburgerMenuTreeSideBarTab.ViewModels
         {
             try
             {
-                var tabHeaderedContentViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabHeaderedContentViewModel>(name: ActiveContentNames.TabHeaderedContentHamburgerMenuSideBar);
+                var tabHeaderedContentViewModel = PrismIocExtensions.GetUnityContainer().Resolve<TabHeaderedContentViewModel>(name: ActiveContentNames.TabHeaderedContentHamburgerMenuTreeSideBarRightTabContent);
                 if (tabHeaderedContentViewModel.IsActiveTabItemByName(_menuItem.Name))
                 {
                     return;
